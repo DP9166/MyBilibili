@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  MyBilibili
+//
+//  Created by 段沛 on 16/8/24.
+//  Copyright © 2016年 DP. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// printf
+#ifdef DEBUG
+#define DPLog(...) NSLog(__VA_ARGS__)
+#else 
+#define DPLog(...)
+#endif
+
+
+// color
+#define DPColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define DPRandomColor DPColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// category
+#import "UIView+Extension.h"
+
+#import "MJExtension.h"
+
+
+
+#define DPScreenWidth [UIApplication sharedApplication].keyWindow.size.width
+#define DPScreenHeight [UIApplication sharedApplication].keyWindow.size.height
+
+#endif /* PrefixHeader_pch */
