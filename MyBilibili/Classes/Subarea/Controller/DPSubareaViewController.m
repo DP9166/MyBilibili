@@ -8,58 +8,75 @@
 
 #import "DPSubareaViewController.h"
 
-@interface DPSubareaViewController ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+#import "DPRegion.h"
+#import "DPRegionCollectionCell.h"
+
+@interface DPSubareaViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 
-@property (nonatomic,strong) NSMutableArray *arrays;
+@property (nonatomic,strong) NSArray *regions;
 
 @end
 
 @implementation DPSubareaViewController
-
 static NSString *const cellId = @"cellId";
 
-#pragma mark - lazy 
-- (NSMutableArray *)arrays
+#pragma mark - lazy
+- (NSArray *)regions
 {
-    if(!_arrays){
-        self.arrays = [[NSMutableArray alloc] init];
+    if(!_regions){
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"region.json" ofType:nil];
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        NSArray *dictArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
+        
+        // 将转换后的数据传递给regions
+        NSMutableArray *models = [NSMutableArray arrayWithCapacity:dictArray.count];
+        for (NSDictionary *dict in dictArray) {
+            DPRegion *region = [DPRegion RegionWithDict:dict];
+            [models addObject:region];
+        }
+        _regions = models;
         
     }
-    return _arrays;
+    return _regions;
 }
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationItem.title = @"分区";
-    self.view.backgroundColor = DPColor(239, 239, 239);
-    
     // 创建一个CollectionView
-    UICollectionViewLayout *layout = [[UICollectionViewLayout alloc] init];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.itemSize = CGSizeMake(75, 75);
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, DPScreenWidth, DPScreenHeight) collectionViewLayout:layout];
+    
     collectionView.delegate = self;
     collectionView.dataSource = self;
-    
-    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellId];
+    collectionView.backgroundColor = DPColor(241, 241, 241);
+    [collectionView registerClass:[DPRegionCollectionCell class] forCellWithReuseIdentifier:cellId];
     [self.view addSubview:collectionView];
     
 }
 
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 14;
+    
+    return self.regions.count;
 }
-
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+    DPRegionCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     
+    cell.region = self.regions[indexPath.item];
     return cell;
     
+}
+
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(15, 15, 15, 15);
 }
 
 - (void)didReceiveMemoryWarning {

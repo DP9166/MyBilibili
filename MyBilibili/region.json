@@ -1,0 +1,58 @@
+ [
+  {
+  "title": "直播",
+  "imageName": "home_region_icon_live"
+  },
+  {
+  "title": "番剧",
+  "imageName": "home_region_icon_13"
+  },
+  {
+  "title": "动画",
+  "imageName": "home_region_icon_1"
+  },
+  {
+  "title": "音乐",
+  "imageName": "home_region_icon_3"
+  },
+  {
+  "title": "舞蹈",
+  "imageName": "home_region_icon_129"
+  },
+  {
+  "title": "游戏",
+  "imageName": "home_region_icon_4"
+  },
+  {
+  "title": "科技",
+  "imageName": "home_region_icon_36"
+  },
+  {
+  "title": "生活",
+  "imageName": "home_region_icon_160"
+  },
+  {
+  "title": "鬼畜",
+  "imageName": "home_region_icon_119"
+  },
+  {
+  "title": "时尚",
+  "imageName": "home_region_icon_146"
+  },
+  {
+  "title": "娱乐",
+  "imageName": "home_region_icon_155"
+  },
+  {
+  "title": "电影",
+  "imageName": "home_search_icon_movie"
+  },
+  {
+  "title": "电视剧",
+  "imageName": "home_region_icon_11"
+  },
+  {
+  "title": "游戏中心",
+  "imageName": "_discovery_game"
+  }
+  ]

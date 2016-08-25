@@ -10,6 +10,10 @@
 
 @interface DPRegion : NSObject
 
+@property (nonatomic,copy) NSString *title;
+@property (nonatomic,copy) NSString *imageName;
 
+- (instancetype)initWithDict:(NSDictionary *)dict;
++ (instancetype)RegionWithDict:(NSDictionary *)dict;
 
 @end

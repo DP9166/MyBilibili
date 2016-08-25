@@ -21,6 +21,8 @@
 		FD4FED3B1D6EE2A10059FEA5 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED2E1D6EE2A10059FEA5 /* NSObject+MJKeyValue.m */; };
 		FD4FED3C1D6EE2A10059FEA5 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED301D6EE2A10059FEA5 /* NSObject+MJProperty.m */; };
 		FD4FED3D1D6EE2A10059FEA5 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED321D6EE2A10059FEA5 /* NSString+MJExtension.m */; };
+		FD4FED411D6EE5D00059FEA5 /* region.json in Resources */ = {isa = PBXBuildFile; fileRef = FD4FED401D6EE5D00059FEA5 /* region.json */; };
+		FD4FED441D6EEC2E0059FEA5 /* DPRegionCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED431D6EEC2E0059FEA5 /* DPRegionCollectionCell.m */; };
 		FD9D341D1D6DD2280032ADE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D341C1D6DD2280032ADE1 /* main.m */; };
 		FD9D34201D6DD2280032ADE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D341F1D6DD2280032ADE1 /* AppDelegate.m */; };
 		FD9D34291D6DD2280032ADE1 /* MyBilibili.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34271D6DD2280032ADE1 /* MyBilibili.xcdatamodeld */; };
@@ -82,6 +84,9 @@
 		FD4FED301D6EE2A10059FEA5 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		FD4FED311D6EE2A10059FEA5 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		FD4FED321D6EE2A10059FEA5 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		FD4FED401D6EE5D00059FEA5 /* region.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = region.json; sourceTree = "<group>"; };
+		FD4FED421D6EEC2E0059FEA5 /* DPRegionCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRegionCollectionCell.h; sourceTree = "<group>"; };
+		FD4FED431D6EEC2E0059FEA5 /* DPRegionCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRegionCollectionCell.m; sourceTree = "<group>"; };
 		FD9D34181D6DD2280032ADE1 /* MyBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9D341C1D6DD2280032ADE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		FD9D341E1D6DD2280032ADE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -219,6 +224,7 @@
 				FD9D342F1D6DD2280032ADE1 /* Info.plist */,
 				FD9D34271D6DD2280032ADE1 /* MyBilibili.xcdatamodeld */,
 				FD9D34741D6DE0780032ADE1 /* PrefixHeader.pch */,
+				FD4FED401D6EE5D00059FEA5 /* region.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -480,6 +486,8 @@
 		FD9D346D1D6DD2CC0032ADE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD4FED421D6EEC2E0059FEA5 /* DPRegionCollectionCell.h */,
+				FD4FED431D6EEC2E0059FEA5 /* DPRegionCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -604,6 +612,7 @@
 			files = (
 				FD4FED331D6EE2A10059FEA5 /* Info.plist in Resources */,
 				FD9D342B1D6DD2280032ADE1 /* Assets.xcassets in Resources */,
+				FD4FED411D6EE5D00059FEA5 /* region.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +644,7 @@
 				FD4FED3A1D6EE2A10059FEA5 /* NSObject+MJCoding.m in Sources */,
 				FD4FED351D6EE2A10059FEA5 /* MJFoundation.m in Sources */,
 				FD9D34291D6DD2280032ADE1 /* MyBilibili.xcdatamodeld in Sources */,
+				FD4FED441D6EEC2E0059FEA5 /* DPRegionCollectionCell.m in Sources */,
 				FD4FED371D6EE2A10059FEA5 /* MJPropertyKey.m in Sources */,
 				FD9D34C31D6DE8080032ADE1 /* DPFocusTableViewController.m in Sources */,
 				FD9D34BF1D6DE7F10032ADE1 /* DPFoundTableViewController.m in Sources */,

@@ -10,4 +10,16 @@
 
 @implementation DPRegion
 
+- (instancetype)initWithDict:(NSDictionary *)dict {
+    if (self = [super init]) {
+        self.title = dict[@"title"];
+        self.imageName = dict[@"imageName"];
+    }
+    return self;
+}
+
++ (instancetype)RegionWithDict:(NSDictionary *)dict {
+    return [[self alloc] initWithDict:dict];
+}
+
 @end
