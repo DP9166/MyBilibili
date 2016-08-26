@@ -30,11 +30,12 @@
 		FD9D34391D6DD2280032ADE1 /* MyBilibiliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34381D6DD2280032ADE1 /* MyBilibiliTests.m */; };
 		FD9D34441D6DD2280032ADE1 /* MyBilibiliUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34431D6DD2280032ADE1 /* MyBilibiliUITests.m */; };
 		FD9D34731D6DDDA80032ADE1 /* DPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34721D6DDDA80032ADE1 /* DPTabBarViewController.m */; };
-		FD9D34B91D6DE7BF0032ADE1 /* DPMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34B81D6DE7BF0032ADE1 /* DPMeTableViewController.m */; };
+		FD9D34B91D6DE7BF0032ADE1 /* DPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34B81D6DE7BF0032ADE1 /* DPMeViewController.m */; };
 		FD9D34BC1D6DE7D20032ADE1 /* DPHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34BB1D6DE7D20032ADE1 /* DPHomeTableViewController.m */; };
 		FD9D34BF1D6DE7F10032ADE1 /* DPFoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34BE1D6DE7F10032ADE1 /* DPFoundTableViewController.m */; };
 		FD9D34C31D6DE8080032ADE1 /* DPFocusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34C21D6DE8080032ADE1 /* DPFocusTableViewController.m */; };
 		FD9D34C61D6DE96E0032ADE1 /* DPSubareaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */; };
+		FDCB6E4A1D6FE1FE004338A2 /* DPMeHeadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */; };
 		FDD502AF1D6DEC170014EED3 /* DPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */; };
 /* End PBXBuildFile section */
 
@@ -103,8 +104,8 @@
 		FD9D34711D6DDDA80032ADE1 /* DPTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTabBarViewController.h; sourceTree = "<group>"; };
 		FD9D34721D6DDDA80032ADE1 /* DPTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTabBarViewController.m; sourceTree = "<group>"; };
 		FD9D34741D6DE0780032ADE1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		FD9D34B71D6DE7BF0032ADE1 /* DPMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeTableViewController.h; sourceTree = "<group>"; };
-		FD9D34B81D6DE7BF0032ADE1 /* DPMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeTableViewController.m; sourceTree = "<group>"; };
+		FD9D34B71D6DE7BF0032ADE1 /* DPMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeViewController.h; sourceTree = "<group>"; };
+		FD9D34B81D6DE7BF0032ADE1 /* DPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeViewController.m; sourceTree = "<group>"; };
 		FD9D34BA1D6DE7D20032ADE1 /* DPHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeTableViewController.h; sourceTree = "<group>"; };
 		FD9D34BB1D6DE7D20032ADE1 /* DPHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeTableViewController.m; sourceTree = "<group>"; };
 		FD9D34BD1D6DE7F10032ADE1 /* DPFoundTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFoundTableViewController.h; sourceTree = "<group>"; };
@@ -113,6 +114,8 @@
 		FD9D34C21D6DE8080032ADE1 /* DPFocusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFocusTableViewController.m; sourceTree = "<group>"; };
 		FD9D34C41D6DE96E0032ADE1 /* DPSubareaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubareaViewController.h; sourceTree = "<group>"; };
 		FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubareaViewController.m; sourceTree = "<group>"; };
+		FDCB6E481D6FE1FE004338A2 /* DPMeHeadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHeadButton.h; sourceTree = "<group>"; };
+		FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeHeadButton.m; sourceTree = "<group>"; };
 		FDD502AD1D6DEC170014EED3 /* DPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNavigationController.h; sourceTree = "<group>"; };
 		FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -402,8 +405,8 @@
 		FD9D34631D6DD2CC0032ADE1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FD9D34B71D6DE7BF0032ADE1 /* DPMeTableViewController.h */,
-				FD9D34B81D6DE7BF0032ADE1 /* DPMeTableViewController.m */,
+				FD9D34B71D6DE7BF0032ADE1 /* DPMeViewController.h */,
+				FD9D34B81D6DE7BF0032ADE1 /* DPMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -420,6 +423,8 @@
 			children = (
 				FD4FED0D1D6E96180059FEA5 /* DPMeHeaderView.h */,
 				FD4FED0E1D6E96180059FEA5 /* DPMeHeaderView.m */,
+				FDCB6E481D6FE1FE004338A2 /* DPMeHeadButton.h */,
+				FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -637,7 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD9D34B91D6DE7BF0032ADE1 /* DPMeTableViewController.m in Sources */,
+				FD9D34B91D6DE7BF0032ADE1 /* DPMeViewController.m in Sources */,
 				FD9D34C61D6DE96E0032ADE1 /* DPSubareaViewController.m in Sources */,
 				FD4FED341D6EE2A10059FEA5 /* MJExtensionConst.m in Sources */,
 				FD4FED361D6EE2A10059FEA5 /* MJProperty.m in Sources */,
@@ -658,6 +663,7 @@
 				FD4FED391D6EE2A10059FEA5 /* NSObject+MJClass.m in Sources */,
 				FD9D34BC1D6DE7D20032ADE1 /* DPHomeTableViewController.m in Sources */,
 				FD4FED3D1D6EE2A10059FEA5 /* NSString+MJExtension.m in Sources */,
+				FDCB6E4A1D6FE1FE004338A2 /* DPMeHeadButton.m in Sources */,
 				FD9D34201D6DD2280032ADE1 /* AppDelegate.m in Sources */,
 				FD9D34731D6DDDA80032ADE1 /* DPTabBarViewController.m in Sources */,
 				FD9D341D1D6DD2280032ADE1 /* main.m in Sources */,

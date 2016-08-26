@@ -6,31 +6,31 @@
 //  Copyright © 2016年 DP. All rights reserved.
 //
 
-#import "DPMeTableViewController.h"
+#import "DPMeViewController.h"
 
 #import "DPMeHeaderView.h"
 
-#define DPHeadViewHeight 180
+#define DPHeadViewHeight 120
 
-@interface DPMeTableViewController ()
+@interface DPMeViewController ()
 
 
 @property (nonatomic,strong) UIView *headView;
 @end
 
-@implementation DPMeTableViewController
+@implementation DPMeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = DPColor(247, 88, 135);
+    
     DPMeHeaderView *headView = [[DPMeHeaderView alloc] init];
-    headView.frame = CGRectMake(0, -DPHeadViewHeight-20, DPScreenWidth, DPHeadViewHeight);
+    headView.frame = CGRectMake(0, 0, DPScreenWidth, DPHeadViewHeight);
     self.headView = headView;
     [self.view addSubview:headView];
     
-    self.tableView.backgroundColor = [UIColor whiteColor];
-    self.tableView.showsVerticalScrollIndicator = YES;
-    [self.tableView setContentInset:UIEdgeInsetsMake(CGRectGetHeight(headView.frame), 0, 0, 0)];
+    
 }
 
 - (void)didReceiveMemoryWarning {

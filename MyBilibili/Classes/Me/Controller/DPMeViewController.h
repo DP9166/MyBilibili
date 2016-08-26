@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DPMeTableViewController : UITableViewController
+@interface DPMeViewController : UIViewController
 
 @end

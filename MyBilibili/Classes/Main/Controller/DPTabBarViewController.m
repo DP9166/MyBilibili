@@ -9,7 +9,7 @@
 #import "DPTabBarViewController.h"
 
 #warning 五个子控制器
-#import "DPMeTableViewController.h"
+#import "DPMeViewController.h"
 #import "DPHomeTableViewController.h"
 #import "DPFocusTableViewController.h"
 #import "DPFoundTableViewController.h"
@@ -32,7 +32,7 @@
     DPSubareaViewController *subareaTabCtr = [[DPSubareaViewController alloc] init];
     DPFocusTableViewController *focusTabCtr = [[DPFocusTableViewController alloc] init];
     DPFoundTableViewController *foundTabCtr = [[DPFoundTableViewController alloc] init];
-    DPMeTableViewController *meTabCtr = [[DPMeTableViewController alloc] init];
+    DPMeViewController *meTabCtr = [[DPMeViewController alloc] init];
     
     [self addOneChildVc:homeTabCtr imageName:@"home_home_tab" selectImageName:@"home_home_tab_s"];
     [self addOneChildVc:subareaTabCtr imageName:@"home_category_tab" selectImageName:@"home_category_tab_s"];

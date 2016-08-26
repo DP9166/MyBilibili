@@ -85,9 +85,9 @@
     
     
     UIImageView *logoImgView = [self.borderView.subviews firstObject];
-    logoImgView.x = 8;
-    logoImgView.y = 4;
+    logoImgView.x = 10;
+    logoImgView.y = 6;
     logoImgView.width = borderView.width - logoImgView.x * 2;
-    logoImgView.height = borderView.height;
+    logoImgView.height = borderView.height - logoImgView.y * 2;
 }
 @end
