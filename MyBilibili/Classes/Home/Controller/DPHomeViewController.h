@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DPHomeTableViewController : UITableViewController
+@interface DPHomeViewController : UIViewController
 
 @end

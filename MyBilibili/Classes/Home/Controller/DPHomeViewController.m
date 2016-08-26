@@ -6,13 +6,13 @@
 //  Copyright © 2016年 DP. All rights reserved.
 //
 
-#import "DPHomeTableViewController.h"
+#import "DPHomeViewController.h"
 
-@interface DPHomeTableViewController ()
+@interface DPHomeViewController ()
 
 @end
 
-@implementation DPHomeTableViewController
+@implementation DPHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

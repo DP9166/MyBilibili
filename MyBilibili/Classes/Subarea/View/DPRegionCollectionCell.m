@@ -34,10 +34,8 @@
     _logoImgView.image = [UIImage imageNamed:region.imageName];
     
     if ([_titleLabel.text isEqualToString:@"游戏中心"]) {
-        DPLog(@"23424");
         self.borderView.image = [UIImage imageNamed:@"home_exregion_border"];
     } else {
-        DPLog(@"186697");
         self.borderView.image = [UIImage imageNamed:@"home_region_border"];
     }
     

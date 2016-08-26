@@ -31,11 +31,15 @@
 		FD9D34441D6DD2280032ADE1 /* MyBilibiliUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34431D6DD2280032ADE1 /* MyBilibiliUITests.m */; };
 		FD9D34731D6DDDA80032ADE1 /* DPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34721D6DDDA80032ADE1 /* DPTabBarViewController.m */; };
 		FD9D34B91D6DE7BF0032ADE1 /* DPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34B81D6DE7BF0032ADE1 /* DPMeViewController.m */; };
-		FD9D34BC1D6DE7D20032ADE1 /* DPHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34BB1D6DE7D20032ADE1 /* DPHomeTableViewController.m */; };
+		FD9D34BC1D6DE7D20032ADE1 /* DPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34BB1D6DE7D20032ADE1 /* DPHomeViewController.m */; };
 		FD9D34BF1D6DE7F10032ADE1 /* DPFoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34BE1D6DE7F10032ADE1 /* DPFoundTableViewController.m */; };
 		FD9D34C31D6DE8080032ADE1 /* DPFocusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34C21D6DE8080032ADE1 /* DPFocusTableViewController.m */; };
 		FD9D34C61D6DE96E0032ADE1 /* DPSubareaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */; };
 		FDCB6E4A1D6FE1FE004338A2 /* DPMeHeadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */; };
+		FDCB6E4D1D6FE421004338A2 /* DPMeHomeTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E4C1D6FE421004338A2 /* DPMeHomeTabVC.m */; };
+		FDCB6E501D6FED5C004338A2 /* DPMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E4F1D6FED5C004338A2 /* DPMeTableViewCell.m */; };
+		FDCB6E531D6FF692004338A2 /* DPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E521D6FF692004338A2 /* DPItem.m */; };
+		FDCB6E581D6FFFEF004338A2 /* DPGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E571D6FFFEF004338A2 /* DPGroupItem.m */; };
 		FDD502AF1D6DEC170014EED3 /* DPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */; };
 /* End PBXBuildFile section */
 
@@ -106,8 +110,8 @@
 		FD9D34741D6DE0780032ADE1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FD9D34B71D6DE7BF0032ADE1 /* DPMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeViewController.h; sourceTree = "<group>"; };
 		FD9D34B81D6DE7BF0032ADE1 /* DPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeViewController.m; sourceTree = "<group>"; };
-		FD9D34BA1D6DE7D20032ADE1 /* DPHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeTableViewController.h; sourceTree = "<group>"; };
-		FD9D34BB1D6DE7D20032ADE1 /* DPHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeTableViewController.m; sourceTree = "<group>"; };
+		FD9D34BA1D6DE7D20032ADE1 /* DPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeViewController.h; sourceTree = "<group>"; };
+		FD9D34BB1D6DE7D20032ADE1 /* DPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeViewController.m; sourceTree = "<group>"; };
 		FD9D34BD1D6DE7F10032ADE1 /* DPFoundTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFoundTableViewController.h; sourceTree = "<group>"; };
 		FD9D34BE1D6DE7F10032ADE1 /* DPFoundTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFoundTableViewController.m; sourceTree = "<group>"; };
 		FD9D34C11D6DE8080032ADE1 /* DPFocusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFocusTableViewController.h; sourceTree = "<group>"; };
@@ -116,6 +120,14 @@
 		FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubareaViewController.m; sourceTree = "<group>"; };
 		FDCB6E481D6FE1FE004338A2 /* DPMeHeadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHeadButton.h; sourceTree = "<group>"; };
 		FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeHeadButton.m; sourceTree = "<group>"; };
+		FDCB6E4B1D6FE421004338A2 /* DPMeHomeTabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHomeTabVC.h; sourceTree = "<group>"; };
+		FDCB6E4C1D6FE421004338A2 /* DPMeHomeTabVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeHomeTabVC.m; sourceTree = "<group>"; };
+		FDCB6E4E1D6FED5C004338A2 /* DPMeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeTableViewCell.h; sourceTree = "<group>"; };
+		FDCB6E4F1D6FED5C004338A2 /* DPMeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeTableViewCell.m; sourceTree = "<group>"; };
+		FDCB6E511D6FF692004338A2 /* DPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPItem.h; sourceTree = "<group>"; };
+		FDCB6E521D6FF692004338A2 /* DPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPItem.m; sourceTree = "<group>"; };
+		FDCB6E561D6FFFEF004338A2 /* DPGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGroupItem.h; sourceTree = "<group>"; };
+		FDCB6E571D6FFFEF004338A2 /* DPGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGroupItem.m; sourceTree = "<group>"; };
 		FDD502AD1D6DEC170014EED3 /* DPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNavigationController.h; sourceTree = "<group>"; };
 		FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -343,8 +355,8 @@
 		FD9D345B1D6DD2CC0032ADE1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FD9D34BA1D6DE7D20032ADE1 /* DPHomeTableViewController.h */,
-				FD9D34BB1D6DE7D20032ADE1 /* DPHomeTableViewController.m */,
+				FD9D34BA1D6DE7D20032ADE1 /* DPHomeViewController.h */,
+				FD9D34BB1D6DE7D20032ADE1 /* DPHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -407,6 +419,8 @@
 			children = (
 				FD9D34B71D6DE7BF0032ADE1 /* DPMeViewController.h */,
 				FD9D34B81D6DE7BF0032ADE1 /* DPMeViewController.m */,
+				FDCB6E4B1D6FE421004338A2 /* DPMeHomeTabVC.h */,
+				FDCB6E4C1D6FE421004338A2 /* DPMeHomeTabVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +428,10 @@
 		FD9D34641D6DD2CC0032ADE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FDCB6E511D6FF692004338A2 /* DPItem.h */,
+				FDCB6E521D6FF692004338A2 /* DPItem.m */,
+				FDCB6E561D6FFFEF004338A2 /* DPGroupItem.h */,
+				FDCB6E571D6FFFEF004338A2 /* DPGroupItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,6 +443,8 @@
 				FD4FED0E1D6E96180059FEA5 /* DPMeHeaderView.m */,
 				FDCB6E481D6FE1FE004338A2 /* DPMeHeadButton.h */,
 				FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */,
+				FDCB6E4E1D6FED5C004338A2 /* DPMeTableViewCell.h */,
+				FDCB6E4F1D6FED5C004338A2 /* DPMeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -648,6 +668,7 @@
 				FD4FED361D6EE2A10059FEA5 /* MJProperty.m in Sources */,
 				FD4FED3A1D6EE2A10059FEA5 /* NSObject+MJCoding.m in Sources */,
 				FD4FED351D6EE2A10059FEA5 /* MJFoundation.m in Sources */,
+				FDCB6E531D6FF692004338A2 /* DPItem.m in Sources */,
 				FD9D34291D6DD2280032ADE1 /* MyBilibili.xcdatamodeld in Sources */,
 				FD4FED441D6EEC2E0059FEA5 /* DPRegionCollectionCell.m in Sources */,
 				FD4FED371D6EE2A10059FEA5 /* MJPropertyKey.m in Sources */,
@@ -659,10 +680,13 @@
 				FD4FED3C1D6EE2A10059FEA5 /* NSObject+MJProperty.m in Sources */,
 				FD4FED171D6E9AB90059FEA5 /* UIView+Extension.m in Sources */,
 				FD4FED0F1D6E96180059FEA5 /* DPMeHeaderView.m in Sources */,
+				FDCB6E581D6FFFEF004338A2 /* DPGroupItem.m in Sources */,
 				FD4FED1A1D6EE1920059FEA5 /* DPRegion.m in Sources */,
 				FD4FED391D6EE2A10059FEA5 /* NSObject+MJClass.m in Sources */,
-				FD9D34BC1D6DE7D20032ADE1 /* DPHomeTableViewController.m in Sources */,
+				FDCB6E4D1D6FE421004338A2 /* DPMeHomeTabVC.m in Sources */,
+				FD9D34BC1D6DE7D20032ADE1 /* DPHomeViewController.m in Sources */,
 				FD4FED3D1D6EE2A10059FEA5 /* NSString+MJExtension.m in Sources */,
+				FDCB6E501D6FED5C004338A2 /* DPMeTableViewCell.m in Sources */,
 				FDCB6E4A1D6FE1FE004338A2 /* DPMeHeadButton.m in Sources */,
 				FD9D34201D6DD2280032ADE1 /* AppDelegate.m in Sources */,
 				FD9D34731D6DDDA80032ADE1 /* DPTabBarViewController.m in Sources */,

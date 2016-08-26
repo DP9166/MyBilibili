@@ -10,7 +10,7 @@
 
 #warning 五个子控制器
 #import "DPMeViewController.h"
-#import "DPHomeTableViewController.h"
+#import "DPHomeViewController.h"
 #import "DPFocusTableViewController.h"
 #import "DPFoundTableViewController.h"
 #import "DPSubareaViewController.h"
@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    DPHomeTableViewController *homeTabCtr = [[DPHomeTableViewController alloc] init];
+    DPHomeViewController *homeTabCtr = [[DPHomeViewController alloc] init];
     DPSubareaViewController *subareaTabCtr = [[DPSubareaViewController alloc] init];
     DPFocusTableViewController *focusTabCtr = [[DPFocusTableViewController alloc] init];
     DPFoundTableViewController *foundTabCtr = [[DPFoundTableViewController alloc] init];
