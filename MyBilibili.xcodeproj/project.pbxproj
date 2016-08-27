@@ -35,6 +35,7 @@
 		FD9D34BF1D6DE7F10032ADE1 /* DPFoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34BE1D6DE7F10032ADE1 /* DPFoundTableViewController.m */; };
 		FD9D34C31D6DE8080032ADE1 /* DPFocusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34C21D6DE8080032ADE1 /* DPFocusTableViewController.m */; };
 		FD9D34C61D6DE96E0032ADE1 /* DPSubareaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */; };
+		FDC11BF61D71C9E00099B2EA /* DPHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11BF51D71C9E00099B2EA /* DPHomeHeadView.m */; };
 		FDCB6E4A1D6FE1FE004338A2 /* DPMeHeadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */; };
 		FDCB6E4D1D6FE421004338A2 /* DPMeHomeTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E4C1D6FE421004338A2 /* DPMeHomeTabVC.m */; };
 		FDCB6E501D6FED5C004338A2 /* DPMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E4F1D6FED5C004338A2 /* DPMeTableViewCell.m */; };
@@ -118,6 +119,8 @@
 		FD9D34C21D6DE8080032ADE1 /* DPFocusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFocusTableViewController.m; sourceTree = "<group>"; };
 		FD9D34C41D6DE96E0032ADE1 /* DPSubareaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubareaViewController.h; sourceTree = "<group>"; };
 		FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubareaViewController.m; sourceTree = "<group>"; };
+		FDC11BF41D71C9E00099B2EA /* DPHomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeHeadView.h; sourceTree = "<group>"; };
+		FDC11BF51D71C9E00099B2EA /* DPHomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeHeadView.m; sourceTree = "<group>"; };
 		FDCB6E481D6FE1FE004338A2 /* DPMeHeadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHeadButton.h; sourceTree = "<group>"; };
 		FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeHeadButton.m; sourceTree = "<group>"; };
 		FDCB6E4B1D6FE421004338A2 /* DPMeHomeTabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHomeTabVC.h; sourceTree = "<group>"; };
@@ -371,6 +374,8 @@
 		FD9D345D1D6DD2CC0032ADE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FDC11BF41D71C9E00099B2EA /* DPHomeHeadView.h */,
+				FDC11BF51D71C9E00099B2EA /* DPHomeHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -669,6 +674,7 @@
 				FD4FED3A1D6EE2A10059FEA5 /* NSObject+MJCoding.m in Sources */,
 				FD4FED351D6EE2A10059FEA5 /* MJFoundation.m in Sources */,
 				FDCB6E531D6FF692004338A2 /* DPItem.m in Sources */,
+				FDC11BF61D71C9E00099B2EA /* DPHomeHeadView.m in Sources */,
 				FD9D34291D6DD2280032ADE1 /* MyBilibili.xcdatamodeld in Sources */,
 				FD4FED441D6EEC2E0059FEA5 /* DPRegionCollectionCell.m in Sources */,
 				FD4FED371D6EE2A10059FEA5 /* MJPropertyKey.m in Sources */,

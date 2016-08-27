@@ -42,6 +42,8 @@
 }
 
 - (void)layoutSubviews {
+     [super layoutSubviews];
+    
     _registerBtn = self.subviews[0];
     
     DPMeHeadButton *registerBtn = [self.subviews firstObject];
