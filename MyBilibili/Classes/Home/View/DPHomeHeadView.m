@@ -98,7 +98,7 @@
 
 - (void)addTimer {
     // 添加定时器
-    self.timer = [NSTimer timerWithTimeInterval:2.0f target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
+    self.timer = [NSTimer timerWithTimeInterval:3.0f target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
@@ -132,7 +132,6 @@
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    //    NSLog(@"scrollViewDidEndDragging--松开");
     [self addTimer];
 }
 

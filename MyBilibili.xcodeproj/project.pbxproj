@@ -76,6 +76,7 @@
 		FDCB6E531D6FF692004338A2 /* DPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E521D6FF692004338A2 /* DPItem.m */; };
 		FDCB6E581D6FFFEF004338A2 /* DPGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E571D6FFFEF004338A2 /* DPGroupItem.m */; };
 		FDD502AF1D6DEC170014EED3 /* DPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */; };
+		FDD9C6241D731EB80065D9C6 /* DPHomeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9C6231D731EB80065D9C6 /* DPHomeStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +240,8 @@
 		FDCB6E571D6FFFEF004338A2 /* DPGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGroupItem.m; sourceTree = "<group>"; };
 		FDD502AD1D6DEC170014EED3 /* DPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNavigationController.h; sourceTree = "<group>"; };
 		FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPNavigationController.m; sourceTree = "<group>"; };
+		FDD9C6221D731EB80065D9C6 /* DPHomeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatus.h; sourceTree = "<group>"; };
+		FDD9C6231D731EB80065D9C6 /* DPHomeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,6 +483,8 @@
 			children = (
 				FDC11BFA1D71D9440099B2EA /* DPHomeBanner.h */,
 				FDC11BFB1D71D9440099B2EA /* DPHomeBanner.m */,
+				FDD9C6221D731EB80065D9C6 /* DPHomeStatus.h */,
+				FDD9C6231D731EB80065D9C6 /* DPHomeStatus.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -883,6 +888,7 @@
 				FDC11C2C1D71F4270099B2EA /* UIProgressView+AFNetworking.m in Sources */,
 				FD4FED361D6EE2A10059FEA5 /* MJProperty.m in Sources */,
 				FD4FED3A1D6EE2A10059FEA5 /* NSObject+MJCoding.m in Sources */,
+				FDD9C6241D731EB80065D9C6 /* DPHomeStatus.m in Sources */,
 				FDC11C591D720F5C0099B2EA /* SDWebImageDownloader.m in Sources */,
 				FDC11C5A1D720F5C0099B2EA /* SDWebImageDownloaderOperation.m in Sources */,
 				FDC11C5E1D720F5C0099B2EA /* UIImage+GIF.m in Sources */,
