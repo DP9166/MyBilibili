@@ -13,6 +13,7 @@
 - (instancetype)init {
     if (self == [super init]) {
         self.backgroundColor = DPColor(247, 88, 135);
+        
     }
     return self;
 }
