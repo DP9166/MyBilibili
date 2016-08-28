@@ -1,63 +1,93 @@
 //
-//  DPHomeHeadView.m
+//  DPHeadScrollView.m
 //  MyBilibili
 //
-//  Created by 段沛 on 16/8/27.
+//  Created by 段沛 on 16/8/28.
 //  Copyright © 2016年 DP. All rights reserved.
 //
 
 #import "DPHomeHeadView.h"
 
+#import "DPHomeBanner.h"
+
+#import "UIImageView+WebCache.h"
+
+@interface DPHomeHeadView()
+
+@property (nonatomic,strong) UIScrollView *srcollView;
+
+@end
+
 @implementation DPHomeHeadView
+
 
 - (instancetype)init {
     if (self == [super init]) {
-        self.backgroundColor = DPColor(247, 88, 135);
-        
+        [self createScrollView];
     }
     return self;
 }
 
-- (void)setTitleArray:(NSArray *)titleArray {
-    _titleArray = titleArray;
+// 创建一个UIScrollView
+- (void)createScrollView {
+    UIScrollView *srcollView = [[UIScrollView alloc] init];
     
-    for (NSUInteger i = 0; i <titleArray.count ; i++) {
-        UIButton *btn = [[UIButton alloc] init];
-        btn.titleLabel.font = [UIFont systemFontOfSize:16];
-        [btn setTitle:titleArray[i] forState:UIControlStateNormal];
-    
-        [btn addTarget:self action:@selector(btnOnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:btn];
-    }
-    
-    // 暂时创建一个替代品
-    UIImageView *selectedLineView = [[UIImageView alloc] init];
-    selectedLineView.backgroundColor = [UIColor whiteColor];
-    [self addSubview:selectedLineView];
+    srcollView.pagingEnabled = YES;
+    srcollView.showsVerticalScrollIndicator = NO;
+    srcollView.showsHorizontalScrollIndicator = NO;
+    self.srcollView = srcollView;
+    [self addSubview:srcollView];
 }
 
-
-- (void)btnOnClick:(UIButton *)btn {
-    DPLog(@"123123");
+- (void)setBannerArray:(NSMutableArray *)bannerArray {
+    _bannerArray = bannerArray;
+    
+    // 设置滚动
+    self.srcollView.contentSize = CGSizeMake(DPScreenWidth *bannerArray.count, 100);
+    
+    // 图片
+    for (NSUInteger i = 0; i < bannerArray.count ; i++) {
+        DPHomeBanner *banner = bannerArray[i];
+        UIImageView *imageView = [[UIImageView alloc] init];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:banner.imageurl] placeholderImage:nil];
+        [self.srcollView addSubview:imageView];
+    }
+    
+    // 小白圈
+    UIPageControl *pageControl = [[UIPageControl alloc] init];
+    pageControl.numberOfPages = bannerArray.count;
+    pageControl.pageIndicatorTintColor = [UIColor whiteColor];
+    pageControl.currentPageIndicatorTintColor = DPColor(247, 88, 135);
+    pageControl.defersCurrentPageDisplay = YES;
+    [self addSubview:pageControl];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    for (NSUInteger i = 0; i < self.subviews.count ; i++) {
-        UIButton *btn = self.subviews[i];
-        btn.y = 20;
-        btn.height = 30;
-        btn.width = 50;
-        btn.x = (60 * i) + 70;
+    // srcollView的Frame
+    UIScrollView *srcollView = [self.subviews firstObject];
+    srcollView.x = 0;
+    srcollView.y = 0;
+    srcollView.width = DPScreenWidth;
+    srcollView.height = 100;
+    
+    // 图片的Frame
+    for (NSUInteger i = 0; i < self.srcollView.subviews.count ; i++) {
+        UIImageView *imageView = self.srcollView.subviews[i];
+        
+        imageView.width = DPScreenWidth;
+        imageView.height = 100;
+        imageView.y = 0;
+        imageView.x = i * DPScreenWidth;
     }
     
-    UIImageView *selectedLineView = [self.subviews lastObject];
-    selectedLineView.x = 130;
-    selectedLineView.y = 49;
-    selectedLineView.width = 50;
-    selectedLineView.height = 1;
+    // pageControl的尺寸
+    UIPageControl *pageControl = [self.subviews lastObject];
+    pageControl.width = 60;
+    pageControl.height = 20;
+    pageControl.x = srcollView.width - pageControl.width;
+    pageControl.y = srcollView.height - pageControl.height;
     
 }
-
 @end

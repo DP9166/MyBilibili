@@ -1,8 +1,8 @@
 //
-//  DPHomeHeadView.h
+//  DPHeadScrollView.h
 //  MyBilibili
 //
-//  Created by 段沛 on 16/8/27.
+//  Created by 段沛 on 16/8/28.
 //  Copyright © 2016年 DP. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 
 @interface DPHomeHeadView : UIView
 
-@property (nonatomic,strong) NSArray *titleArray;
+
+@property (nonatomic,strong) NSMutableArray *bannerArray;
 
 @end

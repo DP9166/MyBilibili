@@ -35,7 +35,7 @@
 		FD9D34BF1D6DE7F10032ADE1 /* DPFoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34BE1D6DE7F10032ADE1 /* DPFoundTableViewController.m */; };
 		FD9D34C31D6DE8080032ADE1 /* DPFocusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34C21D6DE8080032ADE1 /* DPFocusTableViewController.m */; };
 		FD9D34C61D6DE96E0032ADE1 /* DPSubareaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */; };
-		FDC11BF61D71C9E00099B2EA /* DPHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11BF51D71C9E00099B2EA /* DPHomeHeadView.m */; };
+		FDC11BF61D71C9E00099B2EA /* DPHomeTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */; };
 		FDC11BF91D71D6130099B2EA /* DPHomeRecommendTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11BF81D71D6130099B2EA /* DPHomeRecommendTableVC.m */; };
 		FDC11BFC1D71D9440099B2EA /* DPHomeBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11BFB1D71D9440099B2EA /* DPHomeBanner.m */; };
 		FDC11C0B1D71F2050099B2EA /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11BFF1D71F2050099B2EA /* AFHTTPSessionManager.m */; };
@@ -69,7 +69,7 @@
 		FDC11C611D720F5C0099B2EA /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11C4F1D720F5C0099B2EA /* UIImageView+HighlightedWebCache.m */; };
 		FDC11C621D720F5C0099B2EA /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11C511D720F5C0099B2EA /* UIImageView+WebCache.m */; };
 		FDC11C631D720F5C0099B2EA /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11C531D720F5C0099B2EA /* UIView+WebCacheOperation.m */; };
-		FDC11C6C1D72B9DF0099B2EA /* DPHomeHeadScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadScrollView.m */; };
+		FDC11C6C1D72B9DF0099B2EA /* DPHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadView.m */; };
 		FDCB6E4A1D6FE1FE004338A2 /* DPMeHeadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */; };
 		FDCB6E4D1D6FE421004338A2 /* DPMeHomeTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E4C1D6FE421004338A2 /* DPMeHomeTabVC.m */; };
 		FDCB6E501D6FED5C004338A2 /* DPMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E4F1D6FED5C004338A2 /* DPMeTableViewCell.m */; };
@@ -153,8 +153,8 @@
 		FD9D34C21D6DE8080032ADE1 /* DPFocusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFocusTableViewController.m; sourceTree = "<group>"; };
 		FD9D34C41D6DE96E0032ADE1 /* DPSubareaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubareaViewController.h; sourceTree = "<group>"; };
 		FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubareaViewController.m; sourceTree = "<group>"; };
-		FDC11BF41D71C9E00099B2EA /* DPHomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeHeadView.h; sourceTree = "<group>"; };
-		FDC11BF51D71C9E00099B2EA /* DPHomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeHeadView.m; sourceTree = "<group>"; };
+		FDC11BF41D71C9E00099B2EA /* DPHomeTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeTitleView.h; sourceTree = "<group>"; };
+		FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeTitleView.m; sourceTree = "<group>"; };
 		FDC11BF71D71D6130099B2EA /* DPHomeRecommendTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeRecommendTableVC.h; sourceTree = "<group>"; };
 		FDC11BF81D71D6130099B2EA /* DPHomeRecommendTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeRecommendTableVC.m; sourceTree = "<group>"; };
 		FDC11BFA1D71D9440099B2EA /* DPHomeBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeBanner.h; sourceTree = "<group>"; };
@@ -225,8 +225,8 @@
 		FDC11C511D720F5C0099B2EA /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		FDC11C521D720F5C0099B2EA /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		FDC11C531D720F5C0099B2EA /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeHeadScrollView.h; sourceTree = "<group>"; };
-		FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeHeadScrollView.m; sourceTree = "<group>"; };
+		FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeHeadView.h; sourceTree = "<group>"; };
+		FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeHeadView.m; sourceTree = "<group>"; };
 		FDCB6E481D6FE1FE004338A2 /* DPMeHeadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHeadButton.h; sourceTree = "<group>"; };
 		FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeHeadButton.m; sourceTree = "<group>"; };
 		FDCB6E4B1D6FE421004338A2 /* DPMeHomeTabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHomeTabVC.h; sourceTree = "<group>"; };
@@ -487,10 +487,10 @@
 		FD9D345D1D6DD2CC0032ADE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FDC11BF41D71C9E00099B2EA /* DPHomeHeadView.h */,
-				FDC11BF51D71C9E00099B2EA /* DPHomeHeadView.m */,
-				FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadScrollView.h */,
-				FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadScrollView.m */,
+				FDC11BF41D71C9E00099B2EA /* DPHomeTitleView.h */,
+				FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */,
+				FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadView.h */,
+				FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -890,7 +890,7 @@
 				FD4FED351D6EE2A10059FEA5 /* MJFoundation.m in Sources */,
 				FDCB6E531D6FF692004338A2 /* DPItem.m in Sources */,
 				FDC11C271D71F4270099B2EA /* AFImageDownloader.m in Sources */,
-				FDC11BF61D71C9E00099B2EA /* DPHomeHeadView.m in Sources */,
+				FDC11BF61D71C9E00099B2EA /* DPHomeTitleView.m in Sources */,
 				FDC11C0F1D71F2050099B2EA /* AFURLResponseSerialization.m in Sources */,
 				FDC11C2A1D71F4270099B2EA /* UIButton+AFNetworking.m in Sources */,
 				FDC11C571D720F5C0099B2EA /* SDWebImageCompat.m in Sources */,
@@ -931,7 +931,7 @@
 				FDC11BFC1D71D9440099B2EA /* DPHomeBanner.m in Sources */,
 				FDC11C631D720F5C0099B2EA /* UIView+WebCacheOperation.m in Sources */,
 				FDC11BF91D71D6130099B2EA /* DPHomeRecommendTableVC.m in Sources */,
-				FDC11C6C1D72B9DF0099B2EA /* DPHomeHeadScrollView.m in Sources */,
+				FDC11C6C1D72B9DF0099B2EA /* DPHomeHeadView.m in Sources */,
 				FD9D34731D6DDDA80032ADE1 /* DPTabBarViewController.m in Sources */,
 				FD9D341D1D6DD2280032ADE1 /* main.m in Sources */,
 			);

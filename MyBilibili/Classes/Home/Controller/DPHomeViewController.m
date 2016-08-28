@@ -8,7 +8,7 @@
 
 #import "DPHomeViewController.h"
 
-#import "DPHomeHeadView.h"
+#import "DPHomeTitleView.h"
 #import "DPHomeRecommendTableVC.h"
 
 @interface DPHomeViewController ()
@@ -36,7 +36,7 @@
     [super viewDidLoad];
     
     // 创建头部视图
-    DPHomeHeadView *headView = [[DPHomeHeadView alloc] init];
+    DPHomeTitleView *headView = [[DPHomeTitleView alloc] init];
     headView.frame = CGRectMake(0, 0, DPScreenWidth, 50);
     headView.titleArray = self.headTitleArray;
     [self.view addSubview:headView];
