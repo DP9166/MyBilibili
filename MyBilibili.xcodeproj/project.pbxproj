@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD1546D31D73DACD00CD0882 /* DPHomeBodyTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1546D21D73DACD00CD0882 /* DPHomeBodyTableCell.m */; };
+		FD1546E01D73F00800CD0882 /* DPHomeNormalView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1546DF1D73F00800CD0882 /* DPHomeNormalView.m */; };
+		FD1547071D740CC800CD0882 /* DPHomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1546FA1D740CC800CD0882 /* DPHomeItem.m */; };
+		FD1547191D740D6700CD0882 /* DPHomeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15470F1D740D6700CD0882 /* DPHomeStatus.m */; };
+		FD15471A1D740D6700CD0882 /* DPHomeStatusBody.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1547111D740D6700CD0882 /* DPHomeStatusBody.m */; };
+		FD15471B1D740D6700CD0882 /* DPHomeStatusHead.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1547131D740D6700CD0882 /* DPHomeStatusHead.m */; };
+		FD15471C1D740D6700CD0882 /* DPHomeNormalViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1547161D740D6700CD0882 /* DPHomeNormalViewFrame.m */; };
+		FD15471D1D740D6700CD0882 /* DPHomeStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1547181D740D6700CD0882 /* DPHomeStatusFrame.m */; };
+		FD1547201D7421AC00CD0882 /* DPHomeBodyTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15471F1D7421AC00CD0882 /* DPHomeBodyTitleView.m */; };
 		FD4FED0F1D6E96180059FEA5 /* DPMeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED0E1D6E96180059FEA5 /* DPMeHeaderView.m */; };
 		FD4FED171D6E9AB90059FEA5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED161D6E9AB90059FEA5 /* UIView+Extension.m */; };
 		FD4FED1A1D6EE1920059FEA5 /* DPRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED191D6EE1920059FEA5 /* DPRegion.m */; };
@@ -76,7 +85,6 @@
 		FDCB6E531D6FF692004338A2 /* DPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E521D6FF692004338A2 /* DPItem.m */; };
 		FDCB6E581D6FFFEF004338A2 /* DPGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E571D6FFFEF004338A2 /* DPGroupItem.m */; };
 		FDD502AF1D6DEC170014EED3 /* DPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */; };
-		FDD9C6241D731EB80065D9C6 /* DPHomeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9C6231D731EB80065D9C6 /* DPHomeStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +105,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD1546D11D73DACD00CD0882 /* DPHomeBodyTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeBodyTableCell.h; path = ../DPHomeBodyTableCell.h; sourceTree = "<group>"; };
+		FD1546D21D73DACD00CD0882 /* DPHomeBodyTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeBodyTableCell.m; path = ../DPHomeBodyTableCell.m; sourceTree = "<group>"; };
+		FD1546DE1D73F00800CD0882 /* DPHomeNormalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeNormalView.h; path = ../DPHomeNormalView.h; sourceTree = "<group>"; };
+		FD1546DF1D73F00800CD0882 /* DPHomeNormalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeNormalView.m; path = ../DPHomeNormalView.m; sourceTree = "<group>"; };
+		FD1546F91D740CC800CD0882 /* DPHomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeItem.h; sourceTree = "<group>"; };
+		FD1546FA1D740CC800CD0882 /* DPHomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeItem.m; sourceTree = "<group>"; };
+		FD15470E1D740D6700CD0882 /* DPHomeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatus.h; sourceTree = "<group>"; };
+		FD15470F1D740D6700CD0882 /* DPHomeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatus.m; sourceTree = "<group>"; };
+		FD1547101D740D6700CD0882 /* DPHomeStatusBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatusBody.h; sourceTree = "<group>"; };
+		FD1547111D740D6700CD0882 /* DPHomeStatusBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatusBody.m; sourceTree = "<group>"; };
+		FD1547121D740D6700CD0882 /* DPHomeStatusHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatusHead.h; sourceTree = "<group>"; };
+		FD1547131D740D6700CD0882 /* DPHomeStatusHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatusHead.m; sourceTree = "<group>"; };
+		FD1547151D740D6700CD0882 /* DPHomeNormalViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeNormalViewFrame.h; sourceTree = "<group>"; };
+		FD1547161D740D6700CD0882 /* DPHomeNormalViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeNormalViewFrame.m; sourceTree = "<group>"; };
+		FD1547171D740D6700CD0882 /* DPHomeStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatusFrame.h; sourceTree = "<group>"; };
+		FD1547181D740D6700CD0882 /* DPHomeStatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatusFrame.m; sourceTree = "<group>"; };
+		FD15471E1D7421AC00CD0882 /* DPHomeBodyTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeBodyTitleView.h; sourceTree = "<group>"; };
+		FD15471F1D7421AC00CD0882 /* DPHomeBodyTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeBodyTitleView.m; sourceTree = "<group>"; };
 		FD4FED0D1D6E96180059FEA5 /* DPMeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHeaderView.h; sourceTree = "<group>"; };
 		FD4FED0E1D6E96180059FEA5 /* DPMeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeHeaderView.m; sourceTree = "<group>"; };
 		FD4FED151D6E9AB90059FEA5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -240,8 +266,6 @@
 		FDCB6E571D6FFFEF004338A2 /* DPGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGroupItem.m; sourceTree = "<group>"; };
 		FDD502AD1D6DEC170014EED3 /* DPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNavigationController.h; sourceTree = "<group>"; };
 		FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPNavigationController.m; sourceTree = "<group>"; };
-		FDD9C6221D731EB80065D9C6 /* DPHomeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatus.h; sourceTree = "<group>"; };
-		FDD9C6231D731EB80065D9C6 /* DPHomeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +293,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1546E11D73F02900CD0882 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FD1546D11D73DACD00CD0882 /* DPHomeBodyTableCell.h */,
+				FD1546D21D73DACD00CD0882 /* DPHomeBodyTableCell.m */,
+				FD1546DE1D73F00800CD0882 /* DPHomeNormalView.h */,
+				FD1546DF1D73F00800CD0882 /* DPHomeNormalView.m */,
+				FD15471E1D7421AC00CD0882 /* DPHomeBodyTitleView.h */,
+				FD15471F1D7421AC00CD0882 /* DPHomeBodyTitleView.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FD15470D1D740D6700CD0882 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				FD15470E1D740D6700CD0882 /* DPHomeStatus.h */,
+				FD15470F1D740D6700CD0882 /* DPHomeStatus.m */,
+				FD1547101D740D6700CD0882 /* DPHomeStatusBody.h */,
+				FD1547111D740D6700CD0882 /* DPHomeStatusBody.m */,
+				FD1547121D740D6700CD0882 /* DPHomeStatusHead.h */,
+				FD1547131D740D6700CD0882 /* DPHomeStatusHead.m */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		FD1547141D740D6700CD0882 /* StatusFrame */ = {
+			isa = PBXGroup;
+			children = (
+				FD1547151D740D6700CD0882 /* DPHomeNormalViewFrame.h */,
+				FD1547161D740D6700CD0882 /* DPHomeNormalViewFrame.m */,
+				FD1547171D740D6700CD0882 /* DPHomeStatusFrame.h */,
+				FD1547181D740D6700CD0882 /* DPHomeStatusFrame.m */,
+			);
+			path = StatusFrame;
+			sourceTree = "<group>";
+		};
 		FD4FED101D6E9A160059FEA5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,10 +542,12 @@
 		FD9D345C1D6DD2CC0032ADE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FD15470D1D740D6700CD0882 /* Status */,
+				FD1547141D740D6700CD0882 /* StatusFrame */,
+				FD1546F91D740CC800CD0882 /* DPHomeItem.h */,
+				FD1546FA1D740CC800CD0882 /* DPHomeItem.m */,
 				FDC11BFA1D71D9440099B2EA /* DPHomeBanner.h */,
 				FDC11BFB1D71D9440099B2EA /* DPHomeBanner.m */,
-				FDD9C6221D731EB80065D9C6 /* DPHomeStatus.h */,
-				FDD9C6231D731EB80065D9C6 /* DPHomeStatus.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -492,6 +555,7 @@
 		FD9D345D1D6DD2CC0032ADE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD1546E11D73F02900CD0882 /* Cell */,
 				FDC11BF41D71C9E00099B2EA /* DPHomeTitleView.h */,
 				FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */,
 				FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadView.h */,
@@ -877,6 +941,7 @@
 			files = (
 				FDC11C2D1D71F4270099B2EA /* UIRefreshControl+AFNetworking.m in Sources */,
 				FDC11C5B1D720F5C0099B2EA /* SDWebImageManager.m in Sources */,
+				FD1547191D740D6700CD0882 /* DPHomeStatus.m in Sources */,
 				FDC11C281D71F4270099B2EA /* AFNetworkActivityIndicatorManager.m in Sources */,
 				FDC11C5C1D720F5C0099B2EA /* SDWebImagePrefetcher.m in Sources */,
 				FD9D34B91D6DE7BF0032ADE1 /* DPMeViewController.m in Sources */,
@@ -886,9 +951,9 @@
 				FDC11C2E1D71F4270099B2EA /* UIWebView+AFNetworking.m in Sources */,
 				FD4FED341D6EE2A10059FEA5 /* MJExtensionConst.m in Sources */,
 				FDC11C2C1D71F4270099B2EA /* UIProgressView+AFNetworking.m in Sources */,
+				FD15471D1D740D6700CD0882 /* DPHomeStatusFrame.m in Sources */,
 				FD4FED361D6EE2A10059FEA5 /* MJProperty.m in Sources */,
 				FD4FED3A1D6EE2A10059FEA5 /* NSObject+MJCoding.m in Sources */,
-				FDD9C6241D731EB80065D9C6 /* DPHomeStatus.m in Sources */,
 				FDC11C591D720F5C0099B2EA /* SDWebImageDownloader.m in Sources */,
 				FDC11C5A1D720F5C0099B2EA /* SDWebImageDownloaderOperation.m in Sources */,
 				FDC11C5E1D720F5C0099B2EA /* UIImage+GIF.m in Sources */,
@@ -901,10 +966,13 @@
 				FDC11C2A1D71F4270099B2EA /* UIButton+AFNetworking.m in Sources */,
 				FDC11C571D720F5C0099B2EA /* SDWebImageCompat.m in Sources */,
 				FD9D34291D6DD2280032ADE1 /* MyBilibili.xcdatamodeld in Sources */,
+				FD1546E01D73F00800CD0882 /* DPHomeNormalView.m in Sources */,
 				FD4FED441D6EEC2E0059FEA5 /* DPRegionCollectionCell.m in Sources */,
 				FD4FED371D6EE2A10059FEA5 /* MJPropertyKey.m in Sources */,
+				FD15471C1D740D6700CD0882 /* DPHomeNormalViewFrame.m in Sources */,
 				FDC11C551D720F5C0099B2EA /* NSData+ImageContentType.m in Sources */,
 				FDC11C611D720F5C0099B2EA /* UIImageView+HighlightedWebCache.m in Sources */,
+				FD15471A1D740D6700CD0882 /* DPHomeStatusBody.m in Sources */,
 				FD9D34C31D6DE8080032ADE1 /* DPFocusTableViewController.m in Sources */,
 				FDC11C5D1D720F5C0099B2EA /* UIButton+WebCache.m in Sources */,
 				FDC11C621D720F5C0099B2EA /* UIImageView+WebCache.m in Sources */,
@@ -920,13 +988,16 @@
 				FD4FED1A1D6EE1920059FEA5 /* DPRegion.m in Sources */,
 				FDC11C0D1D71F2050099B2EA /* AFSecurityPolicy.m in Sources */,
 				FD4FED391D6EE2A10059FEA5 /* NSObject+MJClass.m in Sources */,
+				FD1546D31D73DACD00CD0882 /* DPHomeBodyTableCell.m in Sources */,
 				FDCB6E4D1D6FE421004338A2 /* DPMeHomeTabVC.m in Sources */,
 				FD9D34BC1D6DE7D20032ADE1 /* DPHomeViewController.m in Sources */,
 				FDC11C2B1D71F4270099B2EA /* UIImageView+AFNetworking.m in Sources */,
 				FD4FED3D1D6EE2A10059FEA5 /* NSString+MJExtension.m in Sources */,
+				FD1547071D740CC800CD0882 /* DPHomeItem.m in Sources */,
 				FDCB6E501D6FED5C004338A2 /* DPMeTableViewCell.m in Sources */,
 				FDC11C0E1D71F2050099B2EA /* AFURLRequestSerialization.m in Sources */,
 				FDC11C101D71F2050099B2EA /* AFURLSessionManager.m in Sources */,
+				FD1547201D7421AC00CD0882 /* DPHomeBodyTitleView.m in Sources */,
 				FDC11C581D720F5C0099B2EA /* SDWebImageDecoder.m in Sources */,
 				FDCB6E4A1D6FE1FE004338A2 /* DPMeHeadButton.m in Sources */,
 				FDC11C0B1D71F2050099B2EA /* AFHTTPSessionManager.m in Sources */,
@@ -937,6 +1008,7 @@
 				FDC11BFC1D71D9440099B2EA /* DPHomeBanner.m in Sources */,
 				FDC11C631D720F5C0099B2EA /* UIView+WebCacheOperation.m in Sources */,
 				FDC11BF91D71D6130099B2EA /* DPHomeRecommendTableVC.m in Sources */,
+				FD15471B1D740D6700CD0882 /* DPHomeStatusHead.m in Sources */,
 				FDC11C6C1D72B9DF0099B2EA /* DPHomeHeadView.m in Sources */,
 				FD9D34731D6DDDA80032ADE1 /* DPTabBarViewController.m in Sources */,
 				FD9D341D1D6DD2280032ADE1 /* main.m in Sources */,

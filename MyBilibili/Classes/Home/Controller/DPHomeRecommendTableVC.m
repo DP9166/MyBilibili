@@ -10,8 +10,11 @@
 
 #import "DPHomeBanner.h"
 #import "DPHomeHeadView.h"
+#import "DPHomeBodyTableCell.h"
 
 #import "DPHomeStatus.h"
+
+#import "DPHomeStatusFrame.h"
 
 #import "AFNetworking.h"
 
@@ -20,34 +23,25 @@
 
 @property (nonatomic,strong) DPHomeHeadView *headView;
 
-
-@property (nonatomic,strong) NSMutableArray *bodyStatus;
+@property (nonatomic,strong) NSMutableArray *statusFrame;
 @end
 
 @implementation DPHomeRecommendTableVC
 
 
 #pragma mark - lazy
-- (NSMutableArray *)bodyStatus
+- (NSMutableArray *)statusFrame
 {
-    if(!_bodyStatus){
-        self.bodyStatus = [[NSMutableArray alloc] init];
+    if(!_statusFrame){
+        self.statusFrame = [[NSMutableArray alloc] init];
     }
-    return _bodyStatus;
-}
-
-- (instancetype)init {
-    if (self = [super init]) {
-    }
-    return self;
+    return _statusFrame;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    DPLog(@"%f",self.tableView.height);
-    [self addTopScrollView];
     
+    [self addTopScrollView];
     [self addBodyView];
 }
 
@@ -70,14 +64,25 @@
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     [mgr GET:@"http://app.bilibili.com/x/show/old?platform=ios&device=phone&build=2310&access_key=" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-//        DPLog(@"%@",responseObject[@"result"]);
-        self.bodyStatus = [DPHomeStatus mj_objectArrayWithKeyValuesArray:responseObject[@"result"]];
+        self.statusFrame = [self statusFramesWithStatuses:[DPHomeStatus mj_objectArrayWithKeyValuesArray:responseObject[@"result"]]];
         
         [self.tableView reloadData];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         DPLog(@"%@",error);
     }];
+}
+
+- (NSMutableArray *)statusFramesWithStatuses:(NSArray *)statuses
+{
+    NSMutableArray *frames = [NSMutableArray array];
+    for (DPHomeStatus *status in statuses) {
+        DPHomeStatusFrame *frame = [[DPHomeStatusFrame alloc] init];
+        // 传递微博模型数据，计算所有子控件的frame
+        frame.status = status;
+        [frames addObject:frame];
+    }
+    return frames;
 }
 
 - (void)addTopScrollView {
@@ -97,25 +102,23 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 99, 0);
     
-    DPLog(@"%@",self.tabBarItem);
-    
     [self loadBodyData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.bodyStatus.count;
+    return self.statusFrame.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"status";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
     
-    cell.backgroundColor = DPRandomColor;
+    DPHomeBodyTableCell *cell = [DPHomeBodyTableCell cellWithTableView:tableView];
+    cell.statusFrame = self.statusFrame[indexPath.row];
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DPHomeStatusFrame *frame = self.statusFrame[indexPath.row];
+    return frame.cellHeight;
+}
 
 @end

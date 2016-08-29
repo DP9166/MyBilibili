@@ -1,14 +1,16 @@
 //
-//  DPHomeStatus.h
+//  DPHomeStatusBody.h
 //  MyBilibili
 //
-//  Created by 段沛 on 16/8/28.
+//  Created by 段沛 on 16/8/29.
 //  Copyright © 2016年 DP. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface DPHomeStatus : NSObject
+@interface DPHomeStatusBody : NSObject
+
+
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *style;
 @property (nonatomic,copy) NSString *cover;
@@ -18,7 +20,5 @@
 @property (nonatomic,copy) NSString *heigth;
 @property (nonatomic,copy) NSString *play;
 @property (nonatomic,copy) NSString *danmaku;
-
-
 
 @end
