@@ -24,8 +24,7 @@
 
 - (void)setupNormalViewFrame {
     DPHomeNormalViewFrame *normalViewFrame = [[DPHomeNormalViewFrame alloc] init];
-   
-    DPLog(@"6545656");
+    
     normalViewFrame.status = self.status;
     self.normalViewFrame = normalViewFrame;
     

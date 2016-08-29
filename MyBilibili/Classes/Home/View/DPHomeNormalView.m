@@ -8,8 +8,7 @@
 
 #import "DPHomeNormalView.h"
 
-
-#import "DPHomeTitleView.h"
+#import "DPHomeBodyTitleView.h"
 
 #import "DPHomeNormalViewFrame.h"
 
@@ -17,7 +16,7 @@
 
 @interface DPHomeNormalView()
 
-@property (nonatomic,strong) DPHomeTitleView *titleView;
+@property (nonatomic,strong) DPHomeBodyTitleView *titleView;
 @property (nonatomic,strong) UIView *contentView;
 
 @end
@@ -27,7 +26,6 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        
         [self addSubViews];
     }
     return self;
@@ -35,9 +33,8 @@
 
 
 - (void)addSubViews {
-    DPHomeTitleView *titleView = [[DPHomeTitleView alloc] init];
+    DPHomeBodyTitleView *titleView = [[DPHomeBodyTitleView alloc] init];
     self.titleView = titleView;
-    
     [self addSubview:titleView];
     
     UIView *contentView = [[UIView alloc] init];
@@ -46,9 +43,9 @@
 }
 
 - (void)setNormalFrame:(DPHomeNormalViewFrame *)normalFrame {
-    
     _normalFrame = normalFrame;
     
+    self.titleView.titleViewFrame = normalFrame.titleViewFrame;
     
     self.frame = normalFrame.frame;
     

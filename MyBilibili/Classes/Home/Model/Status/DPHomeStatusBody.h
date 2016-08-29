@@ -12,13 +12,26 @@
 
 
 @property (nonatomic,copy) NSString *title;
-@property (nonatomic,copy) NSString *style;
 @property (nonatomic,copy) NSString *cover;
+@property (nonatomic,copy) NSString *uri;
 @property (nonatomic,copy) NSString *param;
 @property (nonatomic,copy) NSString *myGoto;
-@property (nonatomic,copy) NSString *width;
-@property (nonatomic,copy) NSString *heigth;
+/** 热门推荐*/
 @property (nonatomic,copy) NSString *play;
 @property (nonatomic,copy) NSString *danmaku;
+/** 直播*/
+@property (nonatomic,copy) NSString *area;
+@property (nonatomic,copy) NSString *area_id;
+@property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *face;
+@property (nonatomic,copy) NSString *online;
+/** 番剧推荐*/
+@property (nonatomic,copy) NSString *index;
+@property (nonatomic,copy) NSString *mtime;  // "mtime": "2016-08-29 17:05:09.0"
+
+
+
+
+
 
 @end

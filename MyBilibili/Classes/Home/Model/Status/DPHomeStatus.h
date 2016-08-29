@@ -8,14 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DPHomeStatusHead.h"
 #import "DPHomeStatusBody.h"
+
+#import "DPHomeStatusBanner.h"
 
 @interface DPHomeStatus : NSObject
 
 @property (nonatomic,copy) NSString *type;
-@property (nonatomic,strong) DPHomeStatusHead *head;
-@property (nonatomic,strong) DPHomeStatusBody *body;
+@property (nonatomic,copy) NSString *style;
+@property (nonatomic,copy) NSString *title;
+@property (nonatomic,copy) NSString *param;
 
+@property (nonatomic,strong) NSArray *body;
+
+@property (nonatomic,strong) DPHomeStatusBanner *banner;
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import "DPHomeStatus.h"
+#import "DPHomeStatusBody.h"
+#import "DPHomeStatusBanner.h"
 
 @implementation DPHomeStatus
+
+- (NSDictionary *)objectClassInArray {
+    return @{
+             @"body" : [DPHomeStatusBody class],
+             @"banner" : [DPHomeStatusBanner class]};
+}
 
 @end

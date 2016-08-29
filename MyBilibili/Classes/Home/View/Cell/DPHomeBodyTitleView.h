@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DPHomeBodyTitleViewFrame;
 
 @interface DPHomeBodyTitleView : UIView
+
+@property (nonatomic,strong) DPHomeBodyTitleViewFrame *titleViewFrame;
 
 @end

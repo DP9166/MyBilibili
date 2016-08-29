@@ -9,6 +9,7 @@
 #import "DPHomeNormalViewFrame.h"
 
 #import "DPHomeStatus.h"
+#import "DPHomeBodyTitleViewFrame.h"
 
 @implementation DPHomeNormalViewFrame
 
@@ -16,6 +17,12 @@
     _status = status;
     
     
+    // 1. 计算titleView 的 frame
+    DPHomeBodyTitleViewFrame *titleViewFrame = [[DPHomeBodyTitleViewFrame alloc] init];
+    titleViewFrame.status = status;
+    self.titleViewFrame = titleViewFrame;
+    
+#pragma mark - 高度需要修改
     self.frame = CGRectMake(0, 0, DPScreenWidth, 200);
 }
 

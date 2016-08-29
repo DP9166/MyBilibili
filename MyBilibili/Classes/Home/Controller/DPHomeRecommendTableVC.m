@@ -62,9 +62,11 @@
 
 - (void)loadBodyData {
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
-    [mgr GET:@"http://app.bilibili.com/x/show/old?platform=ios&device=phone&build=2310&access_key=" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [mgr GET:@"http://app.bilibili.com/x/v2/show?access_key=eb38b528c25165c1080acb302309b541&actionKey=appkey&appkey=27eb53fc9058f8c3&build=3470&channel=appstore&device=phone&mobi_app=iphone&plat=1&platform=ios&sign=f2f6a165379292d1b5f7a188e9966eb6&ts=1472478083&warm=1" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        self.statusFrame = [self statusFramesWithStatuses:[DPHomeStatus mj_objectArrayWithKeyValuesArray:responseObject[@"result"]]];
+        self.statusFrame = [self statusFramesWithStatuses:[DPHomeStatus mj_objectArrayWithKeyValuesArray:responseObject[@"data"]]];
+        
+        
         
         [self.tableView reloadData];
         
