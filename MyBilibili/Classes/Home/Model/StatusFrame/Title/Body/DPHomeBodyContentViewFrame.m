@@ -9,6 +9,7 @@
 #import "DPHomeBodyContentViewFrame.h"
 #import "DPHomeStatus.h"
 #import "DPBodyItemsView.h"
+#import "DPBodyItemsViewFrame.h"
 
 @implementation DPHomeBodyContentViewFrame
 
@@ -16,12 +17,13 @@
     _status = status;
     
     
-    CGFloat itemX = DPHomeStatusMargin;
-    CGFloat itemY = 0;
-    CGSize itemSize = [DPBodyItemsView sizeWithItemsCount:status.body.count];
-    self.itemFrame = (CGRect){{itemX,itemY},itemSize};
     
-    self.frame = CGRectMake(0, 0, DPScreenWidth, CGRectGetHeight(self.itemFrame));
+    DPBodyItemsViewFrame *itemFrame = [[DPBodyItemsViewFrame alloc] init];
+    itemFrame.status = status;
+    self.itemFrame = itemFrame;
+
+    
+    self.frame = CGRectMake(0, 0, DPScreenWidth, CGRectGetHeight(self.itemFrame.frame));
     
 }
 

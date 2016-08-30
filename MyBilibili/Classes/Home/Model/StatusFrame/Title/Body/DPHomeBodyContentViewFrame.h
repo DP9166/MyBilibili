@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-@class DPHomeStatus;
+@class DPHomeStatus,DPBodyItemsViewFrame;
 
 @interface DPHomeBodyContentViewFrame : NSObject
 
 
-@property (nonatomic,assign) CGRect itemFrame;
+@property (nonatomic,strong) DPBodyItemsViewFrame *itemFrame;
 
 /** 自己的frame */
 @property (nonatomic, assign) CGRect frame;

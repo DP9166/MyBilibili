@@ -27,6 +27,7 @@
     self =[super initWithFrame:frame];
     if (self) {
         DPBodyItemsView *bodyItemsView = [[DPBodyItemsView alloc] init];
+        self.bodyItemsView.backgroundColor = DPRandomColor;
         self.bodyItemsView = bodyItemsView;
         [self addSubview:bodyItemsView];
     }
