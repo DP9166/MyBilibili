@@ -19,6 +19,7 @@
 		FD15472A1D74539A00CD0882 /* homeIcon.json in Resources */ = {isa = PBXBuildFile; fileRef = FD1547291D74539A00CD0882 /* homeIcon.json */; };
 		FD15472D1D74864800CD0882 /* DPHomeStatusBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15472C1D74864800CD0882 /* DPHomeStatusBanner.m */; };
 		FD1547301D748B3000CD0882 /* DPHomeStatusBottom.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15472F1D748B3000CD0882 /* DPHomeStatusBottom.m */; };
+		FD1547331D74A28C00CD0882 /* DPHomeTitleDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1547321D74A28C00CD0882 /* DPHomeTitleDetailView.m */; };
 		FD4FED0F1D6E96180059FEA5 /* DPMeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED0E1D6E96180059FEA5 /* DPMeHeaderView.m */; };
 		FD4FED171D6E9AB90059FEA5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED161D6E9AB90059FEA5 /* UIView+Extension.m */; };
 		FD4FED1A1D6EE1920059FEA5 /* DPRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4FED191D6EE1920059FEA5 /* DPRegion.m */; };
@@ -131,6 +132,8 @@
 		FD15472C1D74864800CD0882 /* DPHomeStatusBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatusBanner.m; sourceTree = "<group>"; };
 		FD15472E1D748B3000CD0882 /* DPHomeStatusBottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatusBottom.h; sourceTree = "<group>"; };
 		FD15472F1D748B3000CD0882 /* DPHomeStatusBottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatusBottom.m; sourceTree = "<group>"; };
+		FD1547311D74A28C00CD0882 /* DPHomeTitleDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeTitleDetailView.h; sourceTree = "<group>"; };
+		FD1547321D74A28C00CD0882 /* DPHomeTitleDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeTitleDetailView.m; sourceTree = "<group>"; };
 		FD4FED0D1D6E96180059FEA5 /* DPMeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHeaderView.h; sourceTree = "<group>"; };
 		FD4FED0E1D6E96180059FEA5 /* DPMeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeHeaderView.m; sourceTree = "<group>"; };
 		FD4FED151D6E9AB90059FEA5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				FD1546DF1D73F00800CD0882 /* DPHomeNormalView.m */,
 				FD15471E1D7421AC00CD0882 /* DPHomeBodyTitleView.h */,
 				FD15471F1D7421AC00CD0882 /* DPHomeBodyTitleView.m */,
+				FD1547311D74A28C00CD0882 /* DPHomeTitleDetailView.h */,
+				FD1547321D74A28C00CD0882 /* DPHomeTitleDetailView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -992,6 +997,7 @@
 				FD9D34C31D6DE8080032ADE1 /* DPFocusTableViewController.m in Sources */,
 				FDC11C5D1D720F5C0099B2EA /* UIButton+WebCache.m in Sources */,
 				FDC11C621D720F5C0099B2EA /* UIImageView+WebCache.m in Sources */,
+				FD1547331D74A28C00CD0882 /* DPHomeTitleDetailView.m in Sources */,
 				FD9D34BF1D6DE7F10032ADE1 /* DPFoundTableViewController.m in Sources */,
 				FD4FED3B1D6EE2A10059FEA5 /* NSObject+MJKeyValue.m in Sources */,
 				FD4FED381D6EE2A10059FEA5 /* MJPropertyType.m in Sources */,

@@ -21,9 +21,8 @@
     DPHomeBodyTitleViewFrame *titleViewFrame = [[DPHomeBodyTitleViewFrame alloc] init];
     titleViewFrame.status = status;
     self.titleViewFrame = titleViewFrame;
-    
 #pragma mark - 高度需要修改
-    self.frame = CGRectMake(0, 0, DPScreenWidth, 200);
+    self.frame = CGRectMake(0, 0, DPScreenWidth,100);
 }
 
 @end

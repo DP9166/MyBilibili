@@ -11,11 +11,13 @@
 #import "DPHomeStatus.h"
 #import "DPHomeStatusBanner.h"
 
+#import "DPHomeTitleDetailView.h"
+
 @interface DPHomeBodyTitleView()
 
 @property (nonatomic,strong) UIImageView *iconImageView;
 @property (nonatomic,strong) UILabel *titleLabel;
-
+@property (nonatomic,strong) DPHomeTitleDetailView *detailView;
 
 @property (nonatomic,strong) NSDictionary *iconDict;
 @end
@@ -63,11 +65,15 @@
     UILabel *titleLabel = [[UILabel alloc] init];
     self.titleLabel = titleLabel;
     [self addSubview:titleLabel];
+    
+    DPHomeTitleDetailView *detailView = [[DPHomeTitleDetailView alloc] init];
+    self.detailView = detailView;
+    [self addSubview:detailView];
+    
 }
 
 - (void)setTitleViewFrame:(DPHomeBodyTitleViewFrame *)titleViewFrame {
     _titleViewFrame = titleViewFrame;
-    
     
     DPHomeStatus *status = titleViewFrame.status;
     
@@ -77,6 +83,11 @@
     self.titleLabel.text = status.title;
     self.titleLabel.font = DPHomeBodyTitleFont;
     self.titleLabel.frame = titleViewFrame.titleFrame;
+    
+    self.detailView.status = status;
+    self.detailView.frame = titleViewFrame.detailFrame;
+    
+    
 }
 
 @end

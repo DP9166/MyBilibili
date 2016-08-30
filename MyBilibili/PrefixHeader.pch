@@ -30,8 +30,15 @@
 #import "MJExtension.h"
 
 
-
 #define DPScreenWidth [UIApplication sharedApplication].keyWindow.size.width
 #define DPScreenHeight [UIApplication sharedApplication].keyWindow.size.height
+
+
+// 通用设置
+#define DPHomeStatusMargin 10;
+
+
+/** 标题右侧的X值 */
+#define DPTitleDetailWidth 200
 
 #endif /* PrefixHeader_pch */

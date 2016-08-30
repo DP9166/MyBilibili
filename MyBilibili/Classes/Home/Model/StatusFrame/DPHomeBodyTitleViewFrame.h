@@ -15,11 +15,12 @@
 
 @interface DPHomeBodyTitleViewFrame : NSObject
 
-
 /** icon图标*/
 @property (nonatomic,assign) CGRect iconFrame;
 /** 标题*/
 @property (nonatomic,assign) CGRect titleFrame;
+/** 右边View*/
+@property (nonatomic,assign) CGRect detailFrame;
 
 /** 自己的frame */
 @property (nonatomic, assign) CGRect frame;
