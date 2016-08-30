@@ -80,6 +80,8 @@
     self.iconImageView.frame = titleViewFrame.iconFrame;
     self.iconImageView.image = [UIImage imageNamed:self.iconDict[status.title]];
     
+    
+//    DPLog(@"%f",self.width);
     self.titleLabel.text = status.title;
     self.titleLabel.font = DPHomeBodyTitleFont;
     self.titleLabel.frame = titleViewFrame.titleFrame;

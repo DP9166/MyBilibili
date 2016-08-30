@@ -35,7 +35,7 @@
 
 
 // 通用设置
-#define DPHomeStatusMargin 10;
+#define DPHomeStatusMargin 10
 
 
 /** 标题右侧的X值 */

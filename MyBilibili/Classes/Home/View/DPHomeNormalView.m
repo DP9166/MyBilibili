@@ -8,16 +8,19 @@
 
 #import "DPHomeNormalView.h"
 
-#import "DPHomeBodyTitleView.h"
-
 #import "DPHomeNormalViewFrame.h"
 
+/** title部分*/
+#import "DPHomeBodyTitleView.h"
+/** body部分*/
+#import "DPHomeBodyContentView.h"
+/** 数据部分*/
 #import "DPHomeStatus.h"
 
 @interface DPHomeNormalView()
 
 @property (nonatomic,strong) DPHomeBodyTitleView *titleView;
-@property (nonatomic,strong) UIView *contentView;
+@property (nonatomic,strong) DPHomeBodyContentView *contentView;
 
 @end
 
@@ -37,7 +40,7 @@
     self.titleView = titleView;
     [self addSubview:titleView];
     
-    UIView *contentView = [[UIView alloc] init];
+    DPHomeBodyContentView *contentView = [[DPHomeBodyContentView alloc] init];
     self.contentView = contentView;
     [self addSubview:contentView];
 }
@@ -46,6 +49,7 @@
     _normalFrame = normalFrame;
     
     self.titleView.titleViewFrame = normalFrame.titleViewFrame;
+    self.contentView.contentViewFrame = normalFrame.contentViewFrame;
     
     self.frame = normalFrame.frame;
     

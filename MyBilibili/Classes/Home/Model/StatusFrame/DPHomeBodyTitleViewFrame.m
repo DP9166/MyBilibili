@@ -35,15 +35,12 @@
     
     self.titleFrame = (CGRect){{titleX,titleY},titleSize};
     
-    
-    
     // 4. detail
     CGFloat detailY = iconY;
     CGFloat detailW = DPTitleDetailWidth;
     CGFloat detailH = 20;
     CGFloat detailX = DPScreenWidth - DPTitleDetailWidth - DPHomeStatusMargin;
     
-    DPLog(@"%f",detailX);
     self.detailFrame = CGRectMake(detailX, detailY, detailW, detailH);
     self.frame = (CGRect){{titleX,titleY},titleSize};
 }

@@ -16,7 +16,6 @@
 
 
 @property (nonatomic,strong) DPHomeNormalView *normalView;
-@property (nonatomic,strong) UIImageView *weblinkView;
 
 @end
 
@@ -39,11 +38,6 @@
     DPHomeNormalView *normalView = [[DPHomeNormalView alloc] init];
     self.normalView = normalView;
     [self addSubview:normalView];
-    
-    UIImageView *weblinkView = [[UIImageView alloc] init];
-    self.weblinkView = weblinkView;
-    [self addSubview:weblinkView];
-    
 }
 
 + (instancetype)cellWithTableView:(UITableView *)tableView {
@@ -57,10 +51,8 @@
 
 - (void)setStatusFrame:(DPHomeStatusFrame *)statusFrame {
     _statusFrame = statusFrame;
-    
-    
-    self.normalView.normalFrame = statusFrame.normalViewFrame;
-    
+
+    self.normalView.normalFrame = statusFrame.normalViewFrame;    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

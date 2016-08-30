@@ -55,9 +55,6 @@
 - (void)setStatus:(DPHomeStatus *)status {
     _status = status;
     
-    
-    DPLog(@"%f",self.width);
-    
     // 进行判断
     if ([status.title isEqualToString:@"热门焦点"]) {
         self.leftImageView.hidden = NO;
