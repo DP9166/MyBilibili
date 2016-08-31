@@ -12,7 +12,7 @@
 
 @implementation DPHomeStatus
 
-- (NSDictionary *)objectClassInArray {
++ (NSDictionary *)objectClassInArray {
     return @{
              @"body" : [DPHomeStatusBody class],
              @"banner" : [DPHomeStatusBanner class]};

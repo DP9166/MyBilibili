@@ -40,6 +40,8 @@
 		FD633B6B1D757FCE00C9AAF6 /* DPHomeBodyContentViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD633B6A1D757FCE00C9AAF6 /* DPHomeBodyContentViewFrame.m */; };
 		FD633B6E1D75834A00C9AAF6 /* DPBodyItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD633B6D1D75834A00C9AAF6 /* DPBodyItemsView.m */; };
 		FD633B711D75856D00C9AAF6 /* DPBodyItemsViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FD633B701D75856D00C9AAF6 /* DPBodyItemsViewFrame.m */; };
+		FD633B741D75C8B500C9AAF6 /* DPCoverImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD633B731D75C8B500C9AAF6 /* DPCoverImageView.m */; };
+		FD633B771D768ED300C9AAF6 /* NSDate+DP.m in Sources */ = {isa = PBXBuildFile; fileRef = FD633B761D768ED300C9AAF6 /* NSDate+DP.m */; };
 		FD9D341D1D6DD2280032ADE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D341C1D6DD2280032ADE1 /* main.m */; };
 		FD9D34201D6DD2280032ADE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D341F1D6DD2280032ADE1 /* AppDelegate.m */; };
 		FD9D34291D6DD2280032ADE1 /* MyBilibili.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD9D34271D6DD2280032ADE1 /* MyBilibili.xcdatamodeld */; };
@@ -177,6 +179,10 @@
 		FD633B6D1D75834A00C9AAF6 /* DPBodyItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBodyItemsView.m; sourceTree = "<group>"; };
 		FD633B6F1D75856D00C9AAF6 /* DPBodyItemsViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBodyItemsViewFrame.h; sourceTree = "<group>"; };
 		FD633B701D75856D00C9AAF6 /* DPBodyItemsViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBodyItemsViewFrame.m; sourceTree = "<group>"; };
+		FD633B721D75C8B500C9AAF6 /* DPCoverImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCoverImageView.h; sourceTree = "<group>"; };
+		FD633B731D75C8B500C9AAF6 /* DPCoverImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCoverImageView.m; sourceTree = "<group>"; };
+		FD633B751D768ED300C9AAF6 /* NSDate+DP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DP.h"; sourceTree = "<group>"; };
+		FD633B761D768ED300C9AAF6 /* NSDate+DP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DP.m"; sourceTree = "<group>"; };
 		FD9D34181D6DD2280032ADE1 /* MyBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9D341C1D6DD2280032ADE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		FD9D341E1D6DD2280032ADE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -362,6 +368,8 @@
 			children = (
 				FD4FED151D6E9AB90059FEA5 /* UIView+Extension.h */,
 				FD4FED161D6E9AB90059FEA5 /* UIView+Extension.m */,
+				FD633B751D768ED300C9AAF6 /* NSDate+DP.h */,
+				FD633B761D768ED300C9AAF6 /* NSDate+DP.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -413,6 +421,8 @@
 				FD633B641D757E9600C9AAF6 /* DPHomeBodyContentView.m */,
 				FD633B6C1D75834A00C9AAF6 /* DPBodyItemsView.h */,
 				FD633B6D1D75834A00C9AAF6 /* DPBodyItemsView.m */,
+				FD633B721D75C8B500C9AAF6 /* DPCoverImageView.h */,
+				FD633B731D75C8B500C9AAF6 /* DPCoverImageView.m */,
 			);
 			path = Body;
 			sourceTree = "<group>";
@@ -1011,6 +1021,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD633B741D75C8B500C9AAF6 /* DPCoverImageView.m in Sources */,
 				FD15472D1D74864800CD0882 /* DPHomeStatusBanner.m in Sources */,
 				FDC11C2D1D71F4270099B2EA /* UIRefreshControl+AFNetworking.m in Sources */,
 				FDC11C5B1D720F5C0099B2EA /* SDWebImageManager.m in Sources */,
@@ -1036,6 +1047,7 @@
 				FDCB6E531D6FF692004338A2 /* DPItem.m in Sources */,
 				FD633B651D757E9600C9AAF6 /* DPHomeBodyContentView.m in Sources */,
 				FDC11C271D71F4270099B2EA /* AFImageDownloader.m in Sources */,
+				FD633B771D768ED300C9AAF6 /* NSDate+DP.m in Sources */,
 				FDC11BF61D71C9E00099B2EA /* DPHomeTitleView.m in Sources */,
 				FDC11C0F1D71F2050099B2EA /* AFURLResponseSerialization.m in Sources */,
 				FDC11C2A1D71F4270099B2EA /* UIButton+AFNetworking.m in Sources */,

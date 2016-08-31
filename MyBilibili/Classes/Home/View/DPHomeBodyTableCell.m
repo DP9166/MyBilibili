@@ -26,6 +26,7 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.backgroundColor = DPColor(241, 241, 241); 
         // 初始化子控件
         [self initWithNormalView];
         

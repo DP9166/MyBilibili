@@ -18,6 +18,8 @@
 
 
 @property (nonatomic,strong) DPBodyItemsView *bodyItemsView;
+
+@property (nonatomic,strong) UIView *testView;
 @end
 
 @implementation DPHomeBodyContentView
@@ -27,9 +29,14 @@
     self =[super initWithFrame:frame];
     if (self) {
         DPBodyItemsView *bodyItemsView = [[DPBodyItemsView alloc] init];
-        self.bodyItemsView.backgroundColor = DPRandomColor;
         self.bodyItemsView = bodyItemsView;
         [self addSubview:bodyItemsView];
+        
+        
+        UIView *testView = [[UIView alloc] init];
+        testView.backgroundColor = [UIColor redColor];
+        self.testView = testView;
+        [self addSubview:testView];
     }
     return self;
 }
@@ -39,6 +46,21 @@
     
     // 1. 先查看数据
     self.bodyItemsView.bodyItems = contentViewFrame.status.body;
+    
+}
+
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+
+    self.testView.x = 0;
+    self.testView.y = 0;
+    self.testView.width = 100;
+    self.testView.height = 100;
+    
+    DPLog(@"%f",self.testView.frame.size.width);
+
 }
 
 
