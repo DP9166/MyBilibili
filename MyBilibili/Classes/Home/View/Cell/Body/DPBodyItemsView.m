@@ -63,7 +63,7 @@
     NSInteger col = itemsCount /2;
     
     CGFloat itemsW = DPScreenWidth;
-    CGFloat itemsH = itemsW * 0.6 * col;
+    CGFloat itemsH = itemsW * 0.53 * col;
     
     return CGSizeMake(itemsW, itemsH);
 }

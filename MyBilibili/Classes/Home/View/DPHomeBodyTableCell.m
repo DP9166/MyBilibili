@@ -26,7 +26,8 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.backgroundColor = DPColor(241, 241, 241); 
+        self.backgroundColor = DPColor(241, 241, 241);
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         // 初始化子控件
         [self initWithNormalView];
         

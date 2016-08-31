@@ -61,7 +61,8 @@
     for (NSUInteger i = 0; i < self.contentViewFrame.status.body.count ; i++) {
         DPBodyItemsView *bodyItemsView = self.subviews[i];
         bodyItemsView.width = DPHomeAloneItemWidth;
-        bodyItemsView.height = DPHomeAloneItemWidth * 0.6;
+#warning 这里为什么系数大于1之后会出现概率很大的循环引用问题？
+        bodyItemsView.height = DPHomeAloneItemWidth * 1.0;
         bodyItemsView.x = DPHomeStatusMargin + (i%2)*(DPHomeStatusMargin+DPHomeAloneItemWidth);
         bodyItemsView.y = DPHomeStatusMargin+ 25 + (i/2)*(DPHomeStatusMargin+bodyItemsView.height);
     }
