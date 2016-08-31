@@ -42,4 +42,8 @@
 /** 标题右侧的X值 */
 #define DPTitleDetailWidth 200
 
+
+#define DPHomeAloneItemWidth (DPScreenWidth - 3*DPHomeStatusMargin)*0.5
+
+
 #endif /* PrefixHeader_pch */

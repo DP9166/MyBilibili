@@ -19,7 +19,6 @@
 
 @property (nonatomic,strong) DPBodyItemsView *bodyItemsView;
 
-@property (nonatomic,strong) UIView *testView;
 @end
 
 @implementation DPHomeBodyContentView
@@ -28,15 +27,12 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self =[super initWithFrame:frame];
     if (self) {
-        DPBodyItemsView *bodyItemsView = [[DPBodyItemsView alloc] init];
-        self.bodyItemsView = bodyItemsView;
-        [self addSubview:bodyItemsView];
-        
-        
-        UIView *testView = [[UIView alloc] init];
-        testView.backgroundColor = [UIColor redColor];
-        self.testView = testView;
-        [self addSubview:testView];
+        for (NSUInteger i = 0; i <6 ; i++) {
+            DPBodyItemsView *bodyItemsView = [[DPBodyItemsView alloc] init];
+            bodyItemsView.backgroundColor = DPRandomColor;
+            self.bodyItemsView = bodyItemsView;
+            [self addSubview:bodyItemsView];
+        }
     }
     return self;
 }
@@ -45,21 +41,31 @@
     _contentViewFrame = contentViewFrame;
     
     // 1. 先查看数据
-    self.bodyItemsView.bodyItems = contentViewFrame.status.body;
+    
+    for (NSUInteger i = 0; i < 6 ; i++) {
+        DPBodyItemsView *bodyItemsView = self.subviews[i];
+        if (i <self.contentViewFrame.status.body.count ) {
+            bodyItemsView.hidden = NO;
+            bodyItemsView.bodyItems = contentViewFrame.status.body;
+        } else {
+            bodyItemsView.hidden = YES;
+        }
+    }
     
 }
 
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
 
-    self.testView.x = 0;
-    self.testView.y = 0;
-    self.testView.width = 100;
-    self.testView.height = 100;
-    
-    DPLog(@"%f",self.testView.frame.size.width);
+    for (NSUInteger i = 0; i < self.contentViewFrame.status.body.count ; i++) {
+        DPBodyItemsView *bodyItemsView = self.subviews[i];
+        bodyItemsView.width = DPHomeAloneItemWidth;
+        bodyItemsView.height = DPHomeAloneItemWidth * 0.6;
+        bodyItemsView.x = DPHomeStatusMargin + (i%2)*(DPHomeStatusMargin+DPHomeAloneItemWidth);
+        bodyItemsView.y = DPHomeStatusMargin+ 25 + (i/2)*(DPHomeStatusMargin+bodyItemsView.height);
+    }
+
 
 }
 
