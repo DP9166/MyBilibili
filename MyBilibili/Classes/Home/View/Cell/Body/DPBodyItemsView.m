@@ -12,7 +12,7 @@
 #import "DPHomeStatusBody.h"
 
 
-#define DPHomeContentItemTitleFont [UIFont systemFontOfSize:12]
+#define DPHomeContentItemTitleFont [UIFont systemFontOfSize:10]
 
 @interface DPBodyItemsView()
 
@@ -34,9 +34,10 @@
         [self addSubview:coverImageView];
         
         UILabel *bottomLabel = [[UILabel alloc] init];
+        bottomLabel.backgroundColor = [UIColor grayColor];
         bottomLabel.font = DPHomeContentItemTitleFont;
         bottomLabel.textColor = [UIColor blackColor];
-        bottomLabel.numberOfLines = 0;
+        bottomLabel.numberOfLines = 2;
         self.bottomLabel = bottomLabel;
         [self addSubview:bottomLabel];
         
@@ -52,6 +53,16 @@
     _coverImageView.body = body;
     
     self.bottomLabel.text = body.title;
+    
+    
+    self.bottomLabel.x = 0;
+    self.bottomLabel.y = 102+0.3*DPHomeStatusMargin;
+    CGSize maxSize = CGSizeMake(DPHomeAloneItemWidth, 44);
+    NSDictionary *attribute =@{NSFontAttributeName: DPHomeContentItemTitleFont};
+    
+    self.bottomLabel.size = [body.title boundingRectWithSize:maxSize options:                NSStringDrawingTruncatesLastVisibleLine |
+                             NSStringDrawingUsesLineFragmentOrigin |
+                             NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
 }
 
 - (void)layoutSubviews {
@@ -61,17 +72,8 @@
     self.coverImageView.y = 0;
     self.coverImageView.width = self.width;
     self.coverImageView.height = self.height * 0.7;
-
-    self.bottomLabel.x = 0;
-    self.bottomLabel.y = CGRectGetMaxY(self.coverImageView.frame)+0.3*DPHomeStatusMargin;
-    CGSize maxSize = CGSizeMake(self.width, self.height - CGRectGetHeight(self.coverImageView.frame));
-    NSDictionary *attribute =@{NSFontAttributeName: DPHomeContentItemTitleFont};
     
-    self.bottomLabel.size = [self.body.title boundingRectWithSize:maxSize options:                NSStringDrawingTruncatesLastVisibleLine |
-                             NSStringDrawingUsesLineFragmentOrigin |
-                             NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
-    
-    DPLog(@"%@",self.bottomLabel);
+    DPLog(@"%f",CGRectGetMaxY(self.coverImageView.frame));
     
 }
 
