@@ -29,7 +29,6 @@
     if (self) {
         for (NSUInteger i = 0; i <6 ; i++) {
             DPBodyItemsView *bodyItemsView = [[DPBodyItemsView alloc] init];
-            bodyItemsView.backgroundColor = DPRandomColor;
             self.bodyItemsView = bodyItemsView;
             [self addSubview:bodyItemsView];
         }

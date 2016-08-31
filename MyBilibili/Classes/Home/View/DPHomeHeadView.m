@@ -43,7 +43,10 @@
     self.srcollView = srcollView;
     [self addSubview:srcollView];
     
-    [self addTimer];
+    
+#warning 这里有个Bug   当访问不了url 的时候。 应该取消
+    
+//    [self addTimer];
 }
 
 - (void)nextPage {
