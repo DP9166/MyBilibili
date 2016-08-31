@@ -11,7 +11,6 @@
 
 @interface DPBodyItemsViewFrame : NSObject
 
-@property (nonatomic,assign) CGFloat itemsFrame;
 
 
 /** 自己的frame */

@@ -8,7 +8,7 @@
 
 #import "DPHomeBodyContentViewFrame.h"
 #import "DPHomeStatus.h"
-#import "DPBodyItemsView.h"
+#import "DPHomeBodyContentView.h"
 #import "DPBodyItemsViewFrame.h"
 
 @implementation DPHomeBodyContentViewFrame
@@ -18,7 +18,7 @@
     
     CGFloat itemX = DPHomeStatusMargin;
     CGFloat itemY = 0;
-    CGSize itemSize = [DPBodyItemsView sizeWithItemsCount:status.body.count];
+    CGSize itemSize = [DPHomeBodyContentView sizeWithItemsCount:status.body.count];
     self.frame = (CGRect){{itemX,itemY},itemSize};
     
 }

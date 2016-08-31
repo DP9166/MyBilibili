@@ -44,7 +44,7 @@
         DPBodyItemsView *bodyItemsView = self.subviews[i];
         if (i <self.contentBody.count ) {
             bodyItemsView.hidden = NO;
-            bodyItemsView.bodyItems = contentBody;
+            bodyItemsView.body = contentBody[i];
         } else {
             bodyItemsView.hidden = YES;
         }
@@ -62,8 +62,16 @@
         bodyItemsView.x = DPHomeStatusMargin + (i%2)*(DPHomeStatusMargin+DPHomeAloneItemWidth);
         bodyItemsView.y = DPHomeStatusMargin+ 25 + (i/2)*(DPHomeStatusMargin+bodyItemsView.height);
     }
+}
 
 
++ (CGSize)sizeWithItemsCount:(NSInteger)itemsCount {
+    NSInteger col = itemsCount /2;
+    
+    CGFloat itemsW = DPScreenWidth;
+    CGFloat itemsH = itemsW * 0.53 * col;
+    
+    return CGSizeMake(itemsW, itemsH);
 }
 
 

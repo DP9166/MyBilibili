@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DPHomeStatusBody;
 
 @interface DPBodyItemsView : UIView
 
-@property (nonatomic,strong) NSArray *bodyItems;
+//@property (nonatomic,strong) NSArray *bodyItems;
 
-
-+ (CGSize)sizeWithItemsCount:(NSInteger)itemsCount;
+@property (nonatomic,strong) DPHomeStatusBody *body;
 
 
 @end

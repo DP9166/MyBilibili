@@ -11,8 +11,10 @@
 
 @interface DPHomeBodyContentView : UIView
 
-//@property (nonatomic,strong) DPHomeBodyContentViewFrame *contentViewFrame;
 
 @property (nonatomic,strong) NSArray *contentBody;
+
+
++ (CGSize)sizeWithItemsCount:(NSInteger)itemsCount;
 
 @end

@@ -9,6 +9,8 @@
 #import "DPBodyItemsView.h"
 #import "DPCoverImageView.h"
 
+#import "DPHomeStatusBody.h"
+
 @interface DPBodyItemsView()
 
 @property (nonatomic,strong) DPCoverImageView *coverImageView;
@@ -19,53 +21,33 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        // 1. 创建6个UIImageView
-//        for (NSUInteger i = 0; i <6 ; i++) {
-//            DPCoverImageView *coverImageView = [[DPCoverImageView alloc] init];
-//            self.coverImageView = coverImageView;
-//            [self addSubview:coverImageView];
-//        }
+        //1. 创建6个UIImageView
+        DPCoverImageView *coverImageView = [[DPCoverImageView alloc] init];
+        coverImageView.backgroundColor = [UIColor grayColor];
+        self.coverImageView = coverImageView;
+        [self addSubview:coverImageView];
+        
     }
     return self;
 }
 
 
-- (void)setBodyItems:(NSArray *)bodyItems {
-    _bodyItems = bodyItems;
-//    
-//    for (NSUInteger i = 0; i <6 ; i++) {
-//        DPCoverImageView *coverImageView = self.subviews[i];
-//        if (i <bodyItems.count) {
-//            coverImageView.body = bodyItems[i];
-//            coverImageView.hidden = NO;
-//        } else {
-//            coverImageView.hidden = YES;
-//        }
-//    }
+- (void)setBody:(DPHomeStatusBody *)body {
+    _body = body;
+    
+    // 进行判断
+    _coverImageView.body = body;
+    
 }
-//
-//- (void)layoutSubviews {
-//    [super layoutSubviews];
-//    
-//    for (NSUInteger i = 0; i < self.bodyItems.count ; i++) {
-//        DPCoverImageView *coverImageView = self.subviews[i];
-//        coverImageView.width = DPHomeAloneItemWidth;
-//        coverImageView.height = DPHomeAloneItemWidth * 0.6;
-//        coverImageView.x = DPHomeStatusMargin + (i%2)*(DPHomeStatusMargin+DPHomeAloneItemWidth);
-//        coverImageView.y = DPHomeStatusMargin+ 25 + (i/2)*(DPHomeStatusMargin+coverImageView.height);
-//    }
-//}
 
-
-
-
-+ (CGSize)sizeWithItemsCount:(NSInteger)itemsCount {
-    NSInteger col = itemsCount /2;
+- (void)layoutSubviews {
+    [super layoutSubviews];
     
-    CGFloat itemsW = DPScreenWidth;
-    CGFloat itemsH = itemsW * 0.53 * col;
+    self.coverImageView.x = 0;
+    self.coverImageView.y = 0;
+    self.coverImageView.width = self.width;
+    self.coverImageView.height = self.height * 0.7;
     
-    return CGSizeMake(itemsW, itemsH);
 }
 
 @end
