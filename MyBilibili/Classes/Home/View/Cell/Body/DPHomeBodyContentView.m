@@ -37,28 +37,24 @@
     return self;
 }
 
-- (void)setContentViewFrame:(DPHomeBodyContentViewFrame *)contentViewFrame {
-    _contentViewFrame = contentViewFrame;
-    
-    // 1. 先查看数据
-    
+
+- (void)setContentBody:(NSArray *)contentBody {
+    _contentBody = contentBody;
     for (NSUInteger i = 0; i < 6 ; i++) {
         DPBodyItemsView *bodyItemsView = self.subviews[i];
-        if (i <self.contentViewFrame.status.body.count ) {
+        if (i <self.contentBody.count ) {
             bodyItemsView.hidden = NO;
-            bodyItemsView.bodyItems = contentViewFrame.status.body;
+            bodyItemsView.bodyItems = contentBody;
         } else {
             bodyItemsView.hidden = YES;
         }
     }
-    
 }
-
 
 - (void)layoutSubviews {
     [super layoutSubviews];
 
-    for (NSUInteger i = 0; i < self.contentViewFrame.status.body.count ; i++) {
+    for (NSUInteger i = 0; i < self.contentBody.count ; i++) {
         DPBodyItemsView *bodyItemsView = self.subviews[i];
         bodyItemsView.width = DPHomeAloneItemWidth;
 #warning 这里为什么系数大于1之后会出现概率很大的循环引用问题？

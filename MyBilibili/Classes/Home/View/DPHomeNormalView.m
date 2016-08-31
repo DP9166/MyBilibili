@@ -49,7 +49,7 @@
     _normalFrame = normalFrame;
     
     self.titleView.titleViewFrame = normalFrame.titleViewFrame;
-    self.contentView.contentViewFrame = normalFrame.contentViewFrame;
+    self.contentView.contentBody = normalFrame.contentViewFrame.status.body;
     
     self.frame = normalFrame.frame;
     

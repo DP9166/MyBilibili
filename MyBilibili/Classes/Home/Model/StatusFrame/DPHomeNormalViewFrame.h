@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@class DPHomeStatus,DPHomeBodyTitleViewFrame,DPHomeBodyContentViewFrame;
+@class DPHomeStatus,DPHomeBodyTitleViewFrame;
+#import "DPHomeBodyContentViewFrame.h"
 
 @interface DPHomeNormalViewFrame : NSObject
 

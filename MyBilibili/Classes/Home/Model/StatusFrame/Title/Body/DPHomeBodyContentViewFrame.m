@@ -16,14 +16,10 @@
 - (void)setStatus:(DPHomeStatus *)status {
     _status = status;
     
-    
-    
-    DPBodyItemsViewFrame *itemFrame = [[DPBodyItemsViewFrame alloc] init];
-    itemFrame.status = status;
-    self.itemFrame = itemFrame;
-
-    
-    self.frame = CGRectMake(0, 0, DPScreenWidth, CGRectGetHeight(self.itemFrame.frame));
+    CGFloat itemX = DPHomeStatusMargin;
+    CGFloat itemY = 0;
+    CGSize itemSize = [DPBodyItemsView sizeWithItemsCount:status.body.count];
+    self.frame = (CGRect){{itemX,itemY},itemSize};
     
 }
 
