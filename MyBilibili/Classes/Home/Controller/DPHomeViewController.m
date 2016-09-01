@@ -11,6 +11,10 @@
 #import "DPHomeTitleView.h"
 #import "DPHomeRecommendTableVC.h"
 
+
+#import "DPHomeStatusBody.h"
+#import "DPHomeItemsController.h"
+
 @interface DPHomeViewController ()
 
 @property (nonatomic,strong) NSArray *headTitleArray;
@@ -50,10 +54,28 @@
     [self.view addSubview:recommendTableVC.view];
     [self addChildViewController:recommendTableVC];
     
-
+    
+    // 监听bodyItemsView点击
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(itemsViewOnClick:) name:DPHomeBodySelectedItemsViewNotification object:nil];
+    
 }
 
 
+/** 
+ * 通知
+ */
+- (void)itemsViewOnClick:(NSNotification *)notification {
+    
+    DPHomeStatusBody *body = notification.userInfo[SelectedItem];
+    
+    DPHomeItemsController *itemsController = [[DPHomeItemsController alloc] init];    
+    [self.navigationController pushViewController:itemsController animated:YES];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     self.navigationController.navigationBarHidden = YES;

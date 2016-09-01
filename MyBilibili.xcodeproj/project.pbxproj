@@ -96,6 +96,7 @@
 		FDCB6E581D6FFFEF004338A2 /* DPGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCB6E571D6FFFEF004338A2 /* DPGroupItem.m */; };
 		FDD0B0AF1D781D5D0080D494 /* DPHomeBodyBannerViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0AE1D781D5D0080D494 /* DPHomeBodyBannerViewFrame.m */; };
 		FDD0B0B21D7820C00080D494 /* DPHomeBodyBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0B11D7820C00080D494 /* DPHomeBodyBannerView.m */; };
+		FDD0B0B71D7875D10080D494 /* DPHomeItemsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0B61D7875D10080D494 /* DPHomeItemsController.m */; };
 		FDD502AF1D6DEC170014EED3 /* DPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */; };
 /* End PBXBuildFile section */
 
@@ -211,8 +212,8 @@
 		FD9D34C21D6DE8080032ADE1 /* DPFocusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFocusTableViewController.m; sourceTree = "<group>"; };
 		FD9D34C41D6DE96E0032ADE1 /* DPSubareaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSubareaViewController.h; sourceTree = "<group>"; };
 		FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubareaViewController.m; sourceTree = "<group>"; };
-		FDC11BF41D71C9E00099B2EA /* DPHomeTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeTitleView.h; sourceTree = "<group>"; };
-		FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeTitleView.m; sourceTree = "<group>"; };
+		FDC11BF41D71C9E00099B2EA /* DPHomeTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeTitleView.h; path = ../DPHomeTitleView.h; sourceTree = "<group>"; };
+		FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeTitleView.m; path = ../DPHomeTitleView.m; sourceTree = "<group>"; };
 		FDC11BF71D71D6130099B2EA /* DPHomeRecommendTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeRecommendTableVC.h; sourceTree = "<group>"; };
 		FDC11BF81D71D6130099B2EA /* DPHomeRecommendTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeRecommendTableVC.m; sourceTree = "<group>"; };
 		FDC11BFA1D71D9440099B2EA /* DPHomeBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeBanner.h; sourceTree = "<group>"; };
@@ -283,8 +284,8 @@
 		FDC11C511D720F5C0099B2EA /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		FDC11C521D720F5C0099B2EA /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		FDC11C531D720F5C0099B2EA /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeHeadView.h; sourceTree = "<group>"; };
-		FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeHeadView.m; sourceTree = "<group>"; };
+		FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeHeadView.h; path = ../DPHomeHeadView.h; sourceTree = "<group>"; };
+		FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeHeadView.m; path = ../DPHomeHeadView.m; sourceTree = "<group>"; };
 		FDCB6E481D6FE1FE004338A2 /* DPMeHeadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHeadButton.h; sourceTree = "<group>"; };
 		FDCB6E491D6FE1FE004338A2 /* DPMeHeadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMeHeadButton.m; sourceTree = "<group>"; };
 		FDCB6E4B1D6FE421004338A2 /* DPMeHomeTabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHomeTabVC.h; sourceTree = "<group>"; };
@@ -299,6 +300,8 @@
 		FDD0B0AE1D781D5D0080D494 /* DPHomeBodyBannerViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeBodyBannerViewFrame.m; sourceTree = "<group>"; };
 		FDD0B0B01D7820C00080D494 /* DPHomeBodyBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeBodyBannerView.h; sourceTree = "<group>"; };
 		FDD0B0B11D7820C00080D494 /* DPHomeBodyBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeBodyBannerView.m; sourceTree = "<group>"; };
+		FDD0B0B51D7875D10080D494 /* DPHomeItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeItemsController.h; sourceTree = "<group>"; };
+		FDD0B0B61D7875D10080D494 /* DPHomeItemsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeItemsController.m; sourceTree = "<group>"; };
 		FDD502AD1D6DEC170014EED3 /* DPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNavigationController.h; sourceTree = "<group>"; };
 		FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -335,9 +338,9 @@
 				FD1546D21D73DACD00CD0882 /* DPHomeBodyTableCell.m */,
 				FD1546DE1D73F00800CD0882 /* DPHomeNormalView.h */,
 				FD1546DF1D73F00800CD0882 /* DPHomeNormalView.m */,
-				FDD0B0AC1D781CE20080D494 /* Banner */,
-				FD633B621D757DE800C9AAF6 /* Title */,
 				FD633B611D757DE200C9AAF6 /* Body */,
+				FD633B621D757DE800C9AAF6 /* Title */,
+				FDD0B0AC1D781CE20080D494 /* Banner */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -624,6 +627,8 @@
 				FD9D34BB1D6DE7D20032ADE1 /* DPHomeViewController.m */,
 				FDC11BF71D71D6130099B2EA /* DPHomeRecommendTableVC.h */,
 				FDC11BF81D71D6130099B2EA /* DPHomeRecommendTableVC.m */,
+				FDD0B0B51D7875D10080D494 /* DPHomeItemsController.h */,
+				FDD0B0B61D7875D10080D494 /* DPHomeItemsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -644,11 +649,9 @@
 		FD9D345D1D6DD2CC0032ADE1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FDD0B0B41D7875920080D494 /* ItemsController */,
+				FDD0B0B31D78756B0080D494 /* HeadScrollView */,
 				FD1546E11D73F02900CD0882 /* Cell */,
-				FDC11BF41D71C9E00099B2EA /* DPHomeTitleView.h */,
-				FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */,
-				FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadView.h */,
-				FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -912,6 +915,24 @@
 			path = Banner;
 			sourceTree = "<group>";
 		};
+		FDD0B0B31D78756B0080D494 /* HeadScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FDC11BF41D71C9E00099B2EA /* DPHomeTitleView.h */,
+				FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */,
+				FDC11C6A1D72B9DF0099B2EA /* DPHomeHeadView.h */,
+				FDC11C6B1D72B9DF0099B2EA /* DPHomeHeadView.m */,
+			);
+			path = HeadScrollView;
+			sourceTree = "<group>";
+		};
+		FDD0B0B41D7875920080D494 /* ItemsController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemsController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1062,6 +1083,7 @@
 				FD4FED341D6EE2A10059FEA5 /* MJExtensionConst.m in Sources */,
 				FDC11C2C1D71F4270099B2EA /* UIProgressView+AFNetworking.m in Sources */,
 				FD15471D1D740D6700CD0882 /* DPHomeStatusFrame.m in Sources */,
+				FDD0B0B71D7875D10080D494 /* DPHomeItemsController.m in Sources */,
 				FD4FED361D6EE2A10059FEA5 /* MJProperty.m in Sources */,
 				FD4FED3A1D6EE2A10059FEA5 /* NSObject+MJCoding.m in Sources */,
 				FDC11C591D720F5C0099B2EA /* SDWebImageDownloader.m in Sources */,

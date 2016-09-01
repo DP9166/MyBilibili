@@ -9,6 +9,8 @@
 #import "DPHomeBodyContentView.h"
 #import "DPHomeBodyContentViewFrame.h"
 
+
+#import "DPHomeStatusBody.h"
 /** 数据*/
 #import "DPHomeStatus.h"
 /** 子视图*/
@@ -31,18 +33,45 @@
             DPBodyItemsView *bodyItemsView = [[DPBodyItemsView alloc] init];
             self.bodyItemsView = bodyItemsView;
             [self addSubview:bodyItemsView];
+            
+            
+            // 添加手势监听器
+            UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] init];
+            [recognizer addTarget:self action:@selector(tapItems:)];
+            [bodyItemsView addGestureRecognizer:recognizer];
         }
     }
     return self;
 }
 
+/**
+ * 监听图片点击
+ */
+- (void)tapItems:(UITapGestureRecognizer *)recognizer {
+    DPLog(@"%ld",recognizer.view.tag);
+    DPBodyItemsView *itemsView = (DPBodyItemsView *)recognizer.view;
+    
+    // 发送通知  跳转控制器
+    
+    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+    userInfo[SelectedItem] = itemsView.body;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:DPHomeBodySelectedItemsViewNotification object:nil userInfo:userInfo];
+}
+
+
+
+
 - (void)setContentBody:(NSArray *)contentBody {
     _contentBody = contentBody;
     for (NSUInteger i = 0; i < 6 ; i++) {
         DPBodyItemsView *bodyItemsView = self.subviews[i];
+        
         if (i <self.contentBody.count ) {
+            DPHomeStatusBody *body = contentBody[i];
             bodyItemsView.hidden = NO;
-            bodyItemsView.body = contentBody[i];
+            bodyItemsView.body = body;
+            bodyItemsView.tag = [body.param integerValue];
         } else {
             bodyItemsView.hidden = YES;
         }

@@ -45,5 +45,9 @@
 
 #define DPHomeAloneItemWidth (DPScreenWidth - 3*DPHomeStatusMargin)*0.5
 
+/** 点击items通知*/
+#define SelectedItem @"selectedItem"
+#define DPHomeBodySelectedItemsViewNotification @"DPHomeBodySelectedItemsViewNotification"
+
 
 #endif /* PrefixHeader_pch */
