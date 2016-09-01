@@ -10,6 +10,7 @@
 
 #import "DPHomeNormalViewFrame.h"
 
+
 #import "DPHomeBodyTitleView.h"
 #import "DPHomeBodyContentView.h"
 #import "DPHomeBodyBannerView.h"
@@ -17,6 +18,9 @@
 /** 数据部分*/
 #import "DPHomeStatus.h"
 #import "DPHomeStatusBanner.h"
+
+#import "DPHomeBodyTitleViewFrame.h"
+#import "DPHomeBodyBannerViewFrame.h"
 
 @interface DPHomeNormalView()
 
@@ -36,7 +40,6 @@
     return self;
 }
 
-
 - (void)addSubViews {
     DPHomeBodyTitleView *titleView = [[DPHomeBodyTitleView alloc] init];
     self.titleView = titleView;
@@ -45,7 +48,6 @@
     DPHomeBodyContentView *contentView = [[DPHomeBodyContentView alloc] init];
     self.contentView = contentView;
     [self addSubview:contentView];
-    
     
     DPHomeBodyBannerView *bannerView = [[DPHomeBodyBannerView alloc] init];
     self.bannerView = bannerView;
@@ -59,10 +61,14 @@
     self.contentView.contentBody = normalFrame.contentViewFrame.status.body;
     
     
+    self.titleView.frame = normalFrame.titleViewFrame.frame;
+    self.contentView.frame = normalFrame.contentViewFrame.frame;
+    
     if (normalFrame.status.banner.bottom) { // 显示banner
         self.bannerView.hidden = NO;
         
         self.bannerView.bannerViewFrame = normalFrame.bannerViewFrame;
+        self.bannerView.frame = normalFrame.bannerViewFrame.frame;
     } else { // 隐藏
         self.bannerView.hidden = YES;
     }

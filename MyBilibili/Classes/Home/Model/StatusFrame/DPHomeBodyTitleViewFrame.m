@@ -17,7 +17,7 @@
     
     // 1. icon
     CGFloat iconX = DPHomeStatusMargin;
-    CGFloat iconY = DPHomeStatusMargin;
+    CGFloat iconY = DPHomeStatusMargin * 0.3;
     CGFloat iconW = 18;
     CGFloat iconH = 18;
     self.iconFrame = CGRectMake(iconX, iconY, iconW, iconH);
@@ -42,7 +42,7 @@
     CGFloat detailX = DPScreenWidth - DPTitleDetailWidth - DPHomeStatusMargin;
     
     self.detailFrame = CGRectMake(detailX, detailY, detailW, detailH);
-    self.frame = (CGRect){{titleX,titleY},titleSize};
+    self.frame = (CGRect){{0,DPHomeStatusMargin},titleSize};
 }
 
 @end

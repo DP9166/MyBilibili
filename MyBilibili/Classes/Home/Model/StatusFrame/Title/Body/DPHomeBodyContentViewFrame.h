@@ -19,5 +19,4 @@
 /** 数据 */
 @property (nonatomic,strong) DPHomeStatus *status;
 
-
 @end

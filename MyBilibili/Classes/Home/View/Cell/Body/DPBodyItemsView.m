@@ -29,12 +29,10 @@
     if (self = [super initWithFrame:frame]) {
         
         DPCoverImageView *coverImageView = [[DPCoverImageView alloc] init];
-        coverImageView.backgroundColor = [UIColor grayColor];
         self.coverImageView = coverImageView;
         [self addSubview:coverImageView];
         
         UILabel *bottomLabel = [[UILabel alloc] init];
-        bottomLabel.backgroundColor = [UIColor grayColor];
         bottomLabel.font = DPHomeContentItemTitleFont;
         bottomLabel.textColor = [UIColor blackColor];
         bottomLabel.numberOfLines = 2;

@@ -20,14 +20,11 @@
     CGFloat bottomX = 0;
     CGFloat bottomY = DPHomeAloneItemWidth * 2 + 35;
     CGFloat bottomW = DPScreenWidth;
-    CGFloat bottomH = 70;
+    CGFloat bottomH = 80;
     
     self.bottomViewFrame = CGRectMake(bottomX, bottomY, bottomW, bottomH);
     
-    
-    
-    
-    self.frame = CGRectMake(0, 0, DPScreenWidth, 50);
+    self.frame = CGRectMake(0, 0, DPScreenWidth, bottomH);
     
 }
 

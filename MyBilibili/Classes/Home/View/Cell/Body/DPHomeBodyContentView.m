@@ -36,7 +36,6 @@
     return self;
 }
 
-
 - (void)setContentBody:(NSArray *)contentBody {
     _contentBody = contentBody;
     for (NSUInteger i = 0; i < 6 ; i++) {
@@ -62,7 +61,6 @@
         bodyItemsView.y = DPHomeStatusMargin+ 25 + (i/2)*(DPHomeStatusMargin+bodyItemsView.height);
     }
 }
-
 
 + (CGSize)sizeWithItemsCount:(NSInteger)itemsCount {
     NSInteger col = itemsCount /2;

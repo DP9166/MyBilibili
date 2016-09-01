@@ -41,6 +41,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = DPColor(241, 241, 241);
+    
     [self addTopScrollView];
     [self addBodyView];
 }

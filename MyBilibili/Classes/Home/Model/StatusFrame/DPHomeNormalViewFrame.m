@@ -37,7 +37,6 @@
     CGFloat h = 0;
     if (status.banner.bottom) {
         h = CGRectGetMaxY(bannerViewFrame.frame) + CGRectGetMaxY(contentViewFrame.frame);
-        DPLog(@" bannerViewFrame -- %f",h);
     } else {
         h =  CGRectGetMaxY(contentViewFrame.frame);
 //        DPLog(@" contentViewFrame -- %f",h);
