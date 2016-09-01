@@ -72,9 +72,6 @@
     self.coverImageView.y = 0;
     self.coverImageView.width = self.width;
     self.coverImageView.height = self.height * 0.7;
-    
-    DPLog(@"%f",CGRectGetMaxY(self.coverImageView.frame));
-    
 }
 
 @end

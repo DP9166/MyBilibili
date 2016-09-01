@@ -11,6 +11,7 @@
 #import "DPHomeStatus.h"
 #import "DPHomeBodyTitleViewFrame.h"
 #import "DPHomeBodyContentViewFrame.h"
+#import "DPHomeBodyBannerViewFrame.h"
 
 @implementation DPHomeNormalViewFrame
 
@@ -28,8 +29,22 @@
     contentViewFrame.status = status;
     self.contentViewFrame = contentViewFrame;
     
+    // 3. DPHomeBodyBannerViewFrame
+    DPHomeBodyBannerViewFrame *bannerViewFrame = [[DPHomeBodyBannerViewFrame alloc] init];
+    bannerViewFrame.banner = status.banner;
+    self.bannerViewFrame = bannerViewFrame;
+    
+    CGFloat h = 0;
+    if (status.banner.bottom) {
+        h = CGRectGetMaxY(bannerViewFrame.frame) + CGRectGetMaxY(contentViewFrame.frame);
+        DPLog(@" bannerViewFrame -- %f",h);
+    } else {
+        h =  CGRectGetMaxY(contentViewFrame.frame);
+//        DPLog(@" contentViewFrame -- %f",h);
+    }
+    
 #pragma mark - 高度需要修改
-    self.frame = CGRectMake(0, 0, DPScreenWidth,CGRectGetHeight(contentViewFrame.frame));
+    self.frame = CGRectMake(0, 0, DPScreenWidth,h);
 }
 
 @end

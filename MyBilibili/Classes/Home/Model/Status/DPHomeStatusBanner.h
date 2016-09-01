@@ -10,5 +10,6 @@
 
 @interface DPHomeStatusBanner : NSObject
 
+@property (nonatomic,strong) NSArray *top;
 @property (nonatomic,strong)  NSArray *bottom;
 @end
