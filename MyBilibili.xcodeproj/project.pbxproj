@@ -97,6 +97,13 @@
 		FDD0B0AF1D781D5D0080D494 /* DPHomeBodyBannerViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0AE1D781D5D0080D494 /* DPHomeBodyBannerViewFrame.m */; };
 		FDD0B0B21D7820C00080D494 /* DPHomeBodyBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0B11D7820C00080D494 /* DPHomeBodyBannerView.m */; };
 		FDD0B0B71D7875D10080D494 /* DPHomeItemsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0B61D7875D10080D494 /* DPHomeItemsController.m */; };
+		FDD0B0DA1D7918600080D494 /* DPLiveStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0D91D7918600080D494 /* DPLiveStatus.m */; };
+		FDD0B0DD1D79196F0080D494 /* DPLiveRecommendData.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0DC1D79196F0080D494 /* DPLiveRecommendData.m */; };
+		FDD0B0E01D7919BD0080D494 /* DPLivePartition.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0DF1D7919BD0080D494 /* DPLivePartition.m */; };
+		FDD0B0E31D791BAA0080D494 /* DPLivePartitionSubIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0E21D791BAA0080D494 /* DPLivePartitionSubIcon.m */; };
+		FDD0B0E71D791F2C0080D494 /* DPLivesCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0E61D791F2C0080D494 /* DPLivesCustom.m */; };
+		FDD0B0EA1D793E810080D494 /* DPHomeLiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0E91D793E810080D494 /* DPHomeLiveTableViewController.m */; };
+		FDD0B0EE1D793EDC0080D494 /* DPHomeBangumiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0B0ED1D793EDC0080D494 /* DPHomeBangumiTableViewController.m */; };
 		FDD502AF1D6DEC170014EED3 /* DPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */; };
 /* End PBXBuildFile section */
 
@@ -124,10 +131,10 @@
 		FD1546DF1D73F00800CD0882 /* DPHomeNormalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeNormalView.m; path = ../DPHomeNormalView.m; sourceTree = "<group>"; };
 		FD1546F91D740CC800CD0882 /* DPHomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeItem.h; sourceTree = "<group>"; };
 		FD1546FA1D740CC800CD0882 /* DPHomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeItem.m; sourceTree = "<group>"; };
-		FD15470E1D740D6700CD0882 /* DPHomeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatus.h; sourceTree = "<group>"; };
-		FD15470F1D740D6700CD0882 /* DPHomeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatus.m; sourceTree = "<group>"; };
-		FD1547101D740D6700CD0882 /* DPHomeStatusBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatusBody.h; sourceTree = "<group>"; };
-		FD1547111D740D6700CD0882 /* DPHomeStatusBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatusBody.m; sourceTree = "<group>"; };
+		FD15470E1D740D6700CD0882 /* DPHomeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeStatus.h; path = ../Status/DPHomeStatus.h; sourceTree = "<group>"; };
+		FD15470F1D740D6700CD0882 /* DPHomeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeStatus.m; path = ../Status/DPHomeStatus.m; sourceTree = "<group>"; };
+		FD1547101D740D6700CD0882 /* DPHomeStatusBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeStatusBody.h; path = ../Status/DPHomeStatusBody.h; sourceTree = "<group>"; };
+		FD1547111D740D6700CD0882 /* DPHomeStatusBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeStatusBody.m; path = ../Status/DPHomeStatusBody.m; sourceTree = "<group>"; };
 		FD1547151D740D6700CD0882 /* DPHomeNormalViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeNormalViewFrame.h; sourceTree = "<group>"; };
 		FD1547161D740D6700CD0882 /* DPHomeNormalViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeNormalViewFrame.m; sourceTree = "<group>"; };
 		FD1547171D740D6700CD0882 /* DPHomeStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatusFrame.h; sourceTree = "<group>"; };
@@ -137,10 +144,10 @@
 		FD1547241D74420D00CD0882 /* DPHomeBodyTitleViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeBodyTitleViewFrame.h; path = ../DPHomeBodyTitleViewFrame.h; sourceTree = "<group>"; };
 		FD1547251D74420D00CD0882 /* DPHomeBodyTitleViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeBodyTitleViewFrame.m; path = ../DPHomeBodyTitleViewFrame.m; sourceTree = "<group>"; };
 		FD1547291D74539A00CD0882 /* homeIcon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeIcon.json; sourceTree = "<group>"; };
-		FD15472B1D74864800CD0882 /* DPHomeStatusBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatusBanner.h; sourceTree = "<group>"; };
-		FD15472C1D74864800CD0882 /* DPHomeStatusBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatusBanner.m; sourceTree = "<group>"; };
-		FD15472E1D748B3000CD0882 /* DPHomeStatusBottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeStatusBottom.h; sourceTree = "<group>"; };
-		FD15472F1D748B3000CD0882 /* DPHomeStatusBottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeStatusBottom.m; sourceTree = "<group>"; };
+		FD15472B1D74864800CD0882 /* DPHomeStatusBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeStatusBanner.h; path = ../Status/DPHomeStatusBanner.h; sourceTree = "<group>"; };
+		FD15472C1D74864800CD0882 /* DPHomeStatusBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeStatusBanner.m; path = ../Status/DPHomeStatusBanner.m; sourceTree = "<group>"; };
+		FD15472E1D748B3000CD0882 /* DPHomeStatusBottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeStatusBottom.h; path = ../Status/DPHomeStatusBottom.h; sourceTree = "<group>"; };
+		FD15472F1D748B3000CD0882 /* DPHomeStatusBottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeStatusBottom.m; path = ../Status/DPHomeStatusBottom.m; sourceTree = "<group>"; };
 		FD1547311D74A28C00CD0882 /* DPHomeTitleDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeTitleDetailView.h; path = ../DPHomeTitleDetailView.h; sourceTree = "<group>"; };
 		FD1547321D74A28C00CD0882 /* DPHomeTitleDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeTitleDetailView.m; path = ../DPHomeTitleDetailView.m; sourceTree = "<group>"; };
 		FD4FED0D1D6E96180059FEA5 /* DPMeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMeHeaderView.h; sourceTree = "<group>"; };
@@ -214,8 +221,8 @@
 		FD9D34C51D6DE96E0032ADE1 /* DPSubareaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSubareaViewController.m; sourceTree = "<group>"; };
 		FDC11BF41D71C9E00099B2EA /* DPHomeTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeTitleView.h; path = ../DPHomeTitleView.h; sourceTree = "<group>"; };
 		FDC11BF51D71C9E00099B2EA /* DPHomeTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeTitleView.m; path = ../DPHomeTitleView.m; sourceTree = "<group>"; };
-		FDC11BF71D71D6130099B2EA /* DPHomeRecommendTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeRecommendTableVC.h; sourceTree = "<group>"; };
-		FDC11BF81D71D6130099B2EA /* DPHomeRecommendTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeRecommendTableVC.m; sourceTree = "<group>"; };
+		FDC11BF71D71D6130099B2EA /* DPHomeRecommendTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeRecommendTableVC.h; path = ../DPHomeRecommendTableVC.h; sourceTree = "<group>"; };
+		FDC11BF81D71D6130099B2EA /* DPHomeRecommendTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeRecommendTableVC.m; path = ../DPHomeRecommendTableVC.m; sourceTree = "<group>"; };
 		FDC11BFA1D71D9440099B2EA /* DPHomeBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeBanner.h; sourceTree = "<group>"; };
 		FDC11BFB1D71D9440099B2EA /* DPHomeBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeBanner.m; sourceTree = "<group>"; };
 		FDC11BFE1D71F2050099B2EA /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -302,6 +309,20 @@
 		FDD0B0B11D7820C00080D494 /* DPHomeBodyBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeBodyBannerView.m; sourceTree = "<group>"; };
 		FDD0B0B51D7875D10080D494 /* DPHomeItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeItemsController.h; sourceTree = "<group>"; };
 		FDD0B0B61D7875D10080D494 /* DPHomeItemsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeItemsController.m; sourceTree = "<group>"; };
+		FDD0B0D81D7918600080D494 /* DPLiveStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLiveStatus.h; sourceTree = "<group>"; };
+		FDD0B0D91D7918600080D494 /* DPLiveStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLiveStatus.m; sourceTree = "<group>"; };
+		FDD0B0DB1D79196F0080D494 /* DPLiveRecommendData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPLiveRecommendData.h; path = ../DPLiveRecommendData.h; sourceTree = "<group>"; };
+		FDD0B0DC1D79196F0080D494 /* DPLiveRecommendData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPLiveRecommendData.m; path = ../DPLiveRecommendData.m; sourceTree = "<group>"; };
+		FDD0B0DE1D7919BD0080D494 /* DPLivePartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPLivePartition.h; path = ../DPLivePartition.h; sourceTree = "<group>"; };
+		FDD0B0DF1D7919BD0080D494 /* DPLivePartition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPLivePartition.m; path = ../DPLivePartition.m; sourceTree = "<group>"; };
+		FDD0B0E11D791BAA0080D494 /* DPLivePartitionSubIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPLivePartitionSubIcon.h; path = ../DPLivePartitionSubIcon.h; sourceTree = "<group>"; };
+		FDD0B0E21D791BAA0080D494 /* DPLivePartitionSubIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPLivePartitionSubIcon.m; path = ../DPLivePartitionSubIcon.m; sourceTree = "<group>"; };
+		FDD0B0E51D791F2C0080D494 /* DPLivesCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLivesCustom.h; sourceTree = "<group>"; };
+		FDD0B0E61D791F2C0080D494 /* DPLivesCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLivesCustom.m; sourceTree = "<group>"; };
+		FDD0B0E81D793E810080D494 /* DPHomeLiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHomeLiveTableViewController.h; path = ../DPHomeLiveTableViewController.h; sourceTree = "<group>"; };
+		FDD0B0E91D793E810080D494 /* DPHomeLiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHomeLiveTableViewController.m; path = ../DPHomeLiveTableViewController.m; sourceTree = "<group>"; };
+		FDD0B0EC1D793EDC0080D494 /* DPHomeBangumiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHomeBangumiTableViewController.h; sourceTree = "<group>"; };
+		FDD0B0ED1D793EDC0080D494 /* DPHomeBangumiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHomeBangumiTableViewController.m; sourceTree = "<group>"; };
 		FDD502AD1D6DEC170014EED3 /* DPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNavigationController.h; sourceTree = "<group>"; };
 		FDD502AE1D6DEC170014EED3 /* DPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -348,14 +369,8 @@
 		FD15470D1D740D6700CD0882 /* Status */ = {
 			isa = PBXGroup;
 			children = (
-				FD15470E1D740D6700CD0882 /* DPHomeStatus.h */,
-				FD15470F1D740D6700CD0882 /* DPHomeStatus.m */,
-				FD1547101D740D6700CD0882 /* DPHomeStatusBody.h */,
-				FD1547111D740D6700CD0882 /* DPHomeStatusBody.m */,
-				FD15472B1D74864800CD0882 /* DPHomeStatusBanner.h */,
-				FD15472C1D74864800CD0882 /* DPHomeStatusBanner.m */,
-				FD15472E1D748B3000CD0882 /* DPHomeStatusBottom.h */,
-				FD15472F1D748B3000CD0882 /* DPHomeStatusBottom.m */,
+				FDD0B0D71D79183A0080D494 /* Live */,
+				FDD0B0D61D7917C80080D494 /* Recommend */,
 			);
 			path = Status;
 			sourceTree = "<group>";
@@ -625,8 +640,7 @@
 			children = (
 				FD9D34BA1D6DE7D20032ADE1 /* DPHomeViewController.h */,
 				FD9D34BB1D6DE7D20032ADE1 /* DPHomeViewController.m */,
-				FDC11BF71D71D6130099B2EA /* DPHomeRecommendTableVC.h */,
-				FDC11BF81D71D6130099B2EA /* DPHomeRecommendTableVC.m */,
+				FDD0B0EB1D793EBE0080D494 /* First */,
 				FDD0B0B51D7875D10080D494 /* DPHomeItemsController.h */,
 				FDD0B0B61D7875D10080D494 /* DPHomeItemsController.m */,
 			);
@@ -659,6 +673,7 @@
 		FD9D345E1D6DD2CC0032ADE1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FDD0B0C51D787B250080D494 /* Common */,
 				FD4FED1B1D6EE2800059FEA5 /* lib */,
 				FD4FED101D6E9A160059FEA5 /* Category */,
 				FD9D341E1D6DD2280032ADE1 /* AppDelegate.h */,
@@ -933,6 +948,67 @@
 			path = ItemsController;
 			sourceTree = "<group>";
 		};
+		FDD0B0C51D787B250080D494 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FDD0B0D61D7917C80080D494 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				FD15470E1D740D6700CD0882 /* DPHomeStatus.h */,
+				FD15470F1D740D6700CD0882 /* DPHomeStatus.m */,
+				FD1547101D740D6700CD0882 /* DPHomeStatusBody.h */,
+				FD1547111D740D6700CD0882 /* DPHomeStatusBody.m */,
+				FD15472B1D74864800CD0882 /* DPHomeStatusBanner.h */,
+				FD15472C1D74864800CD0882 /* DPHomeStatusBanner.m */,
+				FD15472E1D748B3000CD0882 /* DPHomeStatusBottom.h */,
+				FD15472F1D748B3000CD0882 /* DPHomeStatusBottom.m */,
+			);
+			name = Recommend;
+			path = ../Recommend;
+			sourceTree = "<group>";
+		};
+		FDD0B0D71D79183A0080D494 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				FDD0B0D81D7918600080D494 /* DPLiveStatus.h */,
+				FDD0B0D91D7918600080D494 /* DPLiveStatus.m */,
+				FDD0B0E41D791BFB0080D494 /* Recommend_data */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		FDD0B0E41D791BFB0080D494 /* Recommend_data */ = {
+			isa = PBXGroup;
+			children = (
+				FDD0B0DB1D79196F0080D494 /* DPLiveRecommendData.h */,
+				FDD0B0DC1D79196F0080D494 /* DPLiveRecommendData.m */,
+				FDD0B0E51D791F2C0080D494 /* DPLivesCustom.h */,
+				FDD0B0E61D791F2C0080D494 /* DPLivesCustom.m */,
+				FDD0B0DE1D7919BD0080D494 /* DPLivePartition.h */,
+				FDD0B0DF1D7919BD0080D494 /* DPLivePartition.m */,
+				FDD0B0E11D791BAA0080D494 /* DPLivePartitionSubIcon.h */,
+				FDD0B0E21D791BAA0080D494 /* DPLivePartitionSubIcon.m */,
+			);
+			path = Recommend_data;
+			sourceTree = "<group>";
+		};
+		FDD0B0EB1D793EBE0080D494 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				FDC11BF71D71D6130099B2EA /* DPHomeRecommendTableVC.h */,
+				FDC11BF81D71D6130099B2EA /* DPHomeRecommendTableVC.m */,
+				FDD0B0E81D793E810080D494 /* DPHomeLiveTableViewController.h */,
+				FDD0B0E91D793E810080D494 /* DPHomeLiveTableViewController.m */,
+				FDD0B0EC1D793EDC0080D494 /* DPHomeBangumiTableViewController.h */,
+				FDD0B0ED1D793EDC0080D494 /* DPHomeBangumiTableViewController.m */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1069,6 +1145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD633B741D75C8B500C9AAF6 /* DPCoverImageView.m in Sources */,
+				FDD0B0DA1D7918600080D494 /* DPLiveStatus.m in Sources */,
 				FD15472D1D74864800CD0882 /* DPHomeStatusBanner.m in Sources */,
 				FDC11C2D1D71F4270099B2EA /* UIRefreshControl+AFNetworking.m in Sources */,
 				FDC11C5B1D720F5C0099B2EA /* SDWebImageManager.m in Sources */,
@@ -1085,6 +1162,7 @@
 				FD15471D1D740D6700CD0882 /* DPHomeStatusFrame.m in Sources */,
 				FDD0B0B71D7875D10080D494 /* DPHomeItemsController.m in Sources */,
 				FD4FED361D6EE2A10059FEA5 /* MJProperty.m in Sources */,
+				FDD0B0E71D791F2C0080D494 /* DPLivesCustom.m in Sources */,
 				FD4FED3A1D6EE2A10059FEA5 /* NSObject+MJCoding.m in Sources */,
 				FDC11C591D720F5C0099B2EA /* SDWebImageDownloader.m in Sources */,
 				FDC11C5A1D720F5C0099B2EA /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1107,6 +1185,7 @@
 				FD4FED371D6EE2A10059FEA5 /* MJPropertyKey.m in Sources */,
 				FD15471C1D740D6700CD0882 /* DPHomeNormalViewFrame.m in Sources */,
 				FDC11C551D720F5C0099B2EA /* NSData+ImageContentType.m in Sources */,
+				FDD0B0E31D791BAA0080D494 /* DPLivePartitionSubIcon.m in Sources */,
 				FDC11C611D720F5C0099B2EA /* UIImageView+HighlightedWebCache.m in Sources */,
 				FD15471A1D740D6700CD0882 /* DPHomeStatusBody.m in Sources */,
 				FD9D34C31D6DE8080032ADE1 /* DPFocusTableViewController.m in Sources */,
@@ -1120,6 +1199,7 @@
 				FDD502AF1D6DEC170014EED3 /* DPNavigationController.m in Sources */,
 				FDD0B0B21D7820C00080D494 /* DPHomeBodyBannerView.m in Sources */,
 				FD4FED3C1D6EE2A10059FEA5 /* NSObject+MJProperty.m in Sources */,
+				FDD0B0EE1D793EDC0080D494 /* DPHomeBangumiTableViewController.m in Sources */,
 				FD4FED171D6E9AB90059FEA5 /* UIView+Extension.m in Sources */,
 				FD4FED0F1D6E96180059FEA5 /* DPMeHeaderView.m in Sources */,
 				FDCB6E581D6FFFEF004338A2 /* DPGroupItem.m in Sources */,
@@ -1133,6 +1213,7 @@
 				FDC11C2B1D71F4270099B2EA /* UIImageView+AFNetworking.m in Sources */,
 				FD4FED3D1D6EE2A10059FEA5 /* NSString+MJExtension.m in Sources */,
 				FD1547071D740CC800CD0882 /* DPHomeItem.m in Sources */,
+				FDD0B0EA1D793E810080D494 /* DPHomeLiveTableViewController.m in Sources */,
 				FDCB6E501D6FED5C004338A2 /* DPMeTableViewCell.m in Sources */,
 				FDC11C0E1D71F2050099B2EA /* AFURLRequestSerialization.m in Sources */,
 				FDC11C101D71F2050099B2EA /* AFURLSessionManager.m in Sources */,
@@ -1140,6 +1221,7 @@
 				FD1547201D7421AC00CD0882 /* DPHomeBodyTitleView.m in Sources */,
 				FDC11C581D720F5C0099B2EA /* SDWebImageDecoder.m in Sources */,
 				FD1547261D74420D00CD0882 /* DPHomeBodyTitleViewFrame.m in Sources */,
+				FDD0B0DD1D79196F0080D494 /* DPLiveRecommendData.m in Sources */,
 				FDCB6E4A1D6FE1FE004338A2 /* DPMeHeadButton.m in Sources */,
 				FDC11C0B1D71F2050099B2EA /* AFHTTPSessionManager.m in Sources */,
 				FDC11C5F1D720F5C0099B2EA /* UIImage+MultiFormat.m in Sources */,
@@ -1147,6 +1229,7 @@
 				FD633B6B1D757FCE00C9AAF6 /* DPHomeBodyContentViewFrame.m in Sources */,
 				FD9D34201D6DD2280032ADE1 /* AppDelegate.m in Sources */,
 				FDC11C561D720F5C0099B2EA /* SDImageCache.m in Sources */,
+				FDD0B0E01D7919BD0080D494 /* DPLivePartition.m in Sources */,
 				FDC11BFC1D71D9440099B2EA /* DPHomeBanner.m in Sources */,
 				FDC11C631D720F5C0099B2EA /* UIView+WebCacheOperation.m in Sources */,
 				FDC11BF91D71D6130099B2EA /* DPHomeRecommendTableVC.m in Sources */,
