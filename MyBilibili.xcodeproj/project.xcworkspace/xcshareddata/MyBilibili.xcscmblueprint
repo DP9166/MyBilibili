@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7918A7CE6D52FB7C2FD2F8B28FE1ABB39E5587A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7918A7CE6D52FB7C2FD2F8B28FE1ABB39E5587A2" : 0,
+    "CED3BA7EDED056C8038046BE0299A081692952DC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E3376E63-82E8-42E8-BF43-4CECEEEAE1CA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7918A7CE6D52FB7C2FD2F8B28FE1ABB39E5587A2" : "MyBilibili\/",
+    "CED3BA7EDED056C8038046BE0299A081692952DC" : "MyBilibili\/MyBilibili\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyBilibili",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyBilibili.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DP9166\/MyBilibili.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7918A7CE6D52FB7C2FD2F8B28FE1ABB39E5587A2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DP9166\/MyBilibili.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CED3BA7EDED056C8038046BE0299A081692952DC"
+    }
+  ]
+}
