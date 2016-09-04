@@ -8,6 +8,12 @@
 
 #import "DPHomeTitleView.h"
 
+@interface DPHomeTitleView()
+@property (nonatomic,strong) UIButton *selectedBtn;
+@property (nonatomic,strong) UIImageView *selectedLineView;
+@end
+
+
 @implementation DPHomeTitleView
 
 - (instancetype)init {
@@ -24,21 +30,53 @@
     for (NSUInteger i = 0; i <titleArray.count ; i++) {
         UIButton *btn = [[UIButton alloc] init];
         btn.titleLabel.font = [UIFont systemFontOfSize:16];
+        btn.tag = i;
         [btn setTitle:titleArray[i] forState:UIControlStateNormal];
-    
         [btn addTarget:self action:@selector(btnOnClick:) forControlEvents:UIControlEventTouchUpInside];
+        if (i == 1) {
+            self.selectedBtn = btn;
+        }
         [self addSubview:btn];
     }
     
     // 暂时创建一个替代品
     UIImageView *selectedLineView = [[UIImageView alloc] init];
     selectedLineView.backgroundColor = [UIColor whiteColor];
+    self.selectedLineView = selectedLineView;
     [self addSubview:selectedLineView];
 }
 
 
 - (void)btnOnClick:(UIButton *)btn {
-    DPLog(@"123123");
+    
+    if (btn.selected) return;
+    
+    self.selectedBtn.selected = NO;
+    btn.selected = YES;
+    self.selectedBtn = btn;
+    
+   // 通知
+    NSMutableDictionary *userinfo = [NSMutableDictionary dictionary];
+    userinfo[HeadViewBtnTag] = [NSString stringWithFormat:@"%ld",(long)btn.tag];
+    [[NSNotificationCenter defaultCenter] postNotificationName:DPHomeHeadBodyBtnOnClickNotification object:nil userInfo:userinfo];
+    
+    [self changeWithBottomImageViewwithTag:btn.tag];
+    
+}
+
+
+- (void)setSelectedIndex:(NSString *)selectedIndex {
+    _selectedIndex = selectedIndex;
+    
+    NSInteger tag = [selectedIndex integerValue];
+    [self changeWithBottomImageViewwithTag:tag];
+}
+
+- (void)changeWithBottomImageViewwithTag: (NSInteger)tag {
+    // 改变下标动画
+    [UIView animateWithDuration:0.2f animations:^{
+        self.selectedLineView.x = (60 * tag) + 70;
+    }];
 }
 
 - (void)layoutSubviews {
@@ -48,15 +86,15 @@
         UIButton *btn = self.subviews[i];
         btn.y = 20;
         btn.height = 30;
-        btn.width = 50;
+        btn.width = 40;
         btn.x = (60 * i) + 70;
     }
     
     UIImageView *selectedLineView = [self.subviews lastObject];
     selectedLineView.x = 130;
-    selectedLineView.y = 49;
-    selectedLineView.width = 50;
-    selectedLineView.height = 1;
+    selectedLineView.y = 47;
+    selectedLineView.width = 40;
+    selectedLineView.height = 2;
     
 }
 

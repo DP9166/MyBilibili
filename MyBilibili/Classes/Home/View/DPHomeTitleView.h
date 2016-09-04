@@ -12,4 +12,8 @@
 
 @property (nonatomic,strong) NSArray *titleArray;
 
+@property (nonatomic,strong) NSString *selectedIndex;
+
+
+
 @end

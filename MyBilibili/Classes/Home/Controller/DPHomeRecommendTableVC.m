@@ -18,6 +18,9 @@
 
 #import "AFNetworking.h"
 
+#import "MJRefresh.h"
+#import "MJRefreshHeader.h"
+
 
 @interface DPHomeRecommendTableVC ()
 
@@ -45,8 +48,13 @@
     
     [self addTopScrollView];
     [self addBodyView];
-}
 
+    
+    self.tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+        [self loadBodyData];
+        [self.tableView.mj_header endRefreshing];
+    }];
+}
 
 - (void)loadHeadViewData {
     // 1. 请求管理者
