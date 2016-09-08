@@ -48,7 +48,6 @@
  * 监听图片点击
  */
 - (void)tapItems:(UITapGestureRecognizer *)recognizer {
-    DPLog(@"%ld",recognizer.view.tag);
     DPBodyItemsView *itemsView = (DPBodyItemsView *)recognizer.view;
     
     // 发送通知  跳转控制器

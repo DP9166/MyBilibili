@@ -11,10 +11,9 @@
 
 @interface DPLiveStatus : NSObject
 
-@property (nonatomic,strong) NSArray *banner;
+@property (nonatomic,strong) NSMutableArray *banner;
 @property (nonatomic,strong) NSArray *entranceIcons;
 @property (nonatomic,strong) NSArray *partitions;
-
 
 @property (nonatomic,strong) DPLiveRecommendData *recommend_data;
 

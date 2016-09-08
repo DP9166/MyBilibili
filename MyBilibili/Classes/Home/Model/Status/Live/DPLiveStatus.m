@@ -10,4 +10,11 @@
 
 @implementation DPLiveStatus
 
++ (NSDictionary *)objectClassInArray {
+    return @{
+             @"banner" : @"DPLiveBanner",
+             @"entranceIcons" : @"DPLiveEntranceIcons",
+             @"partitions" : @"DPLivePartitions"};
+}
+
 @end

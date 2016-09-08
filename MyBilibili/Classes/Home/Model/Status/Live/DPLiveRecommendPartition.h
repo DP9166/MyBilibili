@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @class DPLivePartitionSubIcon;
 
-@interface DPLivePartition : NSObject
+@interface DPLiveRecommendPartition : NSObject
 
 @property (nonatomic,copy) NSString *ID;
 

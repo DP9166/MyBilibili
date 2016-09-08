@@ -47,8 +47,6 @@
     self.borderView = borderView;
     [self.contentView addSubview:borderView];
     
-    
-    
     _logoImgView = [[UIImageView alloc] init];
     _logoImgView.contentMode = UIViewContentModeScaleAspectFit;
     

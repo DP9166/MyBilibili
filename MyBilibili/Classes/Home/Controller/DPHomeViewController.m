@@ -117,7 +117,6 @@
     NSString *currentIndex = [NSString stringWithFormat:@"%f",scrollView.contentOffset.x/320];
     
     if (scrollView.contentOffset.x /320 == (int)scrollView.contentOffset.x /320) {
-        DPLog(@"%@",currentIndex);
         self.headView.selectedIndex = currentIndex;
     }
     
